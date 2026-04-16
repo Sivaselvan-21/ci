@@ -1,0 +1,162 @@
+Script started on Tue Mar 31 12:30:58 2026
+[23bcs119@mepcolinux ex7]$cat perceptron.py
+def activation(yin):
+    if yin > 0:
+        return 1
+    elif yin < 0:
+        return -1
+    else:
+        return 0
+
+# ----------- INPUT -----------
+
+n = int(input("Enter number of inputs: "))
+m = int(input("Enter number of samples: "))
+
+X = []
+T = []
+
+print("\nEnter input values:")
+for i in range(m):
+    row = list(map(float, input(f"Sample {i+1}: ").split()))
+    X.append(row)
+
+print("\nEnter target values:")
+for i in range(m):
+    T.append(int(input(f"t{i+1}: ")))
+
+weights = list(map(float, input(f"\nEnter {n} initial weights: ").split()))
+bias = float(input("Enter bias: "))
+alpha = float(input("Enter learning rate: "))
+epochs = int(input("Enter number of epochs: "))
+
+# ----------- TRAINING -----------
+
+for epoch in range(epochs):
+    print("\n" + "="*60)
+    print(f"                    EPOCH {epoch+1}")
+    print("="*60)
+
+    # Header
+    header = ""
+    for i in range(n):
+        header += f"{'x'+str(i+1):>8}"
+    header += f"{'t':>8}{'yin':>10}{'y':>8}"
+
+    for i in range(n):
+        header += f"{'w'+str(i+1):>10}"
+    header += f"{'bias':>10}"
+
+    print(header)
+    print("-" * len(header))
+
+    all_correct = True
+
+    for i in range(m):
+        # Calculate yin
+        yin = sum(X[i][j] * weights[j] for j in range(n)) + bias
+
+        # Activation
+        y = activation(yin)
+
+        # Check correctness
+        if y != T[i]:
+            all_correct = False
+
+        # Print row (BEFORE update)
+        row = ""
+        for val in X[i]:
+            row += f"{val:>8.2f}"
+
+        row += f"{T[i]:>8}{yin:>10.3f}{y:>8}"
+
+        for w in weights:
+            row += f"{w:>10.3f}"
+
+        row += f"{bias:>10.3f}"
+
+        print(row)
+
+        # ----------- UPDATE RULE -----------
+        for j in range(n):
+            weights[j] += alpha * X[i][j] * T[i]
+
+        bias += alpha * T[i]
+
+    # Stop if all outputs correct
+    if all_correct:
+        print("\nAll outputs matched targets TRAINING STOPPED")
+        break
+
+# ----------- FINAL RESULT -----------
+
+print("\n" + "="*40)
+print("FINAL WEIGHTS AND BIAS")
+print("="*40)
+
+for i in range(n):
+    print(f"w{i+1} = {weights[i]:.3f}")
+print(f"bias = {bias:.3f}")
+[23bcs119@mepcolinux ex7]$cat output
+Enter number of inputs: 2
+Enter number of samples: 4
+
+Enter input values:
+Sample 1: -1 -1
+Sample 2: -1 1
+Sample 3: 1 -1
+Sample 4: 1 1
+
+Enter target values:
+t1: -1
+t2: -1
+t3: -1
+t4: 1
+
+Enter 2 initial weights: 0.3 0.2
+Enter bias: 0.4
+Enter learning rate: 0.2
+Enter number of epochs: 4
+
+============================================================
+                    EPOCH 1
+============================================================
+      x1      x2       t       yin       y        w1        w2      bias
+------------------------------------------------------------------------
+   -1.00   -1.00      -1    -0.100      -1     0.300     0.200     0.400
+   -1.00    1.00      -1     0.100       1     0.500     0.400     0.200
+    1.00   -1.00      -1     0.500       1     0.700     0.200     0.000
+    1.00    1.00       1     0.700       1     0.500     0.400    -0.200
+
+============================================================
+                    EPOCH 2
+============================================================
+      x1      x2       t       yin       y        w1        w2      bias
+------------------------------------------------------------------------
+   -1.00   -1.00      -1    -1.300      -1     0.700     0.600     0.000
+   -1.00    1.00      -1    -0.300      -1     0.900     0.800    -0.200
+    1.00   -1.00      -1     0.100       1     1.100     0.600    -0.400
+    1.00    1.00       1     1.100       1     0.900     0.800    -0.600
+
+============================================================
+                    EPOCH 3
+============================================================
+      x1      x2       t       yin       y        w1        w2      bias
+------------------------------------------------------------------------
+   -1.00   -1.00      -1    -2.500      -1     1.100     1.000    -0.400
+   -1.00    1.00      -1    -0.700      -1     1.300     1.200    -0.600
+    1.00   -1.00      -1    -0.300      -1     1.500     1.000    -0.800
+    1.00    1.00       1     1.500       1     1.300     1.200    -1.000
+
+All outputs matched targets TRAINING STOPPED
+
+========================================
+FINAL WEIGHTS AND BIAS
+========================================
+w1 = 1.500
+w2 = 1.400
+bias = -0.800
+[23bcs119@mepcolinux ex7]$exit
+exit
+
+Script done on Tue Mar 31 12:31:12 2026

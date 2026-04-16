@@ -1,0 +1,284 @@
+Enter number of vertices: 7
+
+Enter vertex name and heuristic value
+Vertex: A
+Heuristic h(A): 9
+Vertex: B
+Heuristic h(B): 4
+Vertex: C
+Heuristic h(C): 2
+Vertex: G
+Heuristic h(G): 0
+Vertex: E
+Heuristic h(E): 3
+Vertex: D
+Heuristic h(D): 5
+Vertex: S
+Heuristic h(S): 7
+
+Enter number of directed edges: 10
+Enter edges (source destination cost):
+Source: A
+Destination: B
+Cost: 5
+Source: A
+Destination: C
+Cost: 10
+Source: B
+Destination: C
+Cost: 2
+Source: S
+Destination: A
+Cost: 3
+Source: S
+Destination: D
+Cost: 2
+Source: D
+Destination: E
+Cost: 4
+Source: D
+Destination: B
+Cost: 1
+Source: B
+Destination: E
+Cost: 1
+Source: E
+Destination: G
+Cost: 3
+Source: C
+Destination: G
+Cost: 4
+
+Enter START node: S
+Enter GOAL node: G
+
+--- PATH-BASED A* SEARCH (ALL PATHS SHOWN) ---
+
+STEP 1
+OPEN LIST:
+  Path: S, g=0, f=7.0
+
+EXPANDING:
+  Path: S
+  g(S) = 0
+  h(S) = 7.0
+  f(S) = 7.0
+    Exploring S->A | g=3.0, h=9.0, f=12.0
+    Exploring S->D | g=2.0, h=5.0, f=7.0
+
+STEP 2
+OPEN LIST:
+  Path: S->D, g=2.0, f=7.0
+  Path: S->A, g=3.0, f=12.0
+
+EXPANDING:
+  Path: S->D
+  g(D) = 2.0
+  h(D) = 5.0
+  f(D) = 7.0
+    Exploring D->E | g=6.0, h=3.0, f=9.0
+    Exploring D->B | g=3.0, h=4.0, f=7.0
+
+STEP 3
+OPEN LIST:
+  Path: S->D->B, g=3.0, f=7.0
+  Path: S->A, g=3.0, f=12.0
+  Path: S->D->E, g=6.0, f=9.0
+
+EXPANDING:
+  Path: S->D->B
+  g(B) = 3.0
+  h(B) = 4.0
+  f(B) = 7.0
+    Exploring B->C | g=5.0, h=2.0, f=7.0
+    Exploring B->E | g=4.0, h=3.0, f=7.0
+
+STEP 4
+OPEN LIST:
+  Path: S->D->B->E, g=4.0, f=7.0
+  Path: S->D->B->C, g=5.0, f=7.0
+  Path: S->D->E, g=6.0, f=9.0
+  Path: S->A, g=3.0, f=12.0
+
+EXPANDING:
+  Path: S->D->B->E
+  g(E) = 4.0
+  h(E) = 3.0
+  f(E) = 7.0
+    Exploring E->G | g=7.0, h=0.0, f=7.0
+
+STEP 5
+OPEN LIST:
+  Path: S->D->B->C, g=5.0, f=7.0
+  Path: S->D->B->E->G, g=7.0, f=7.0
+  Path: S->D->E, g=6.0, f=9.0
+  Path: S->A, g=3.0, f=12.0
+
+EXPANDING:
+  Path: S->D->B->C
+  g(C) = 5.0
+  h(C) = 2.0
+  f(C) = 7.0
+    Exploring C->G | g=9.0, h=0.0, f=9.0
+
+STEP 6
+OPEN LIST:
+  Path: S->D->B->E->G, g=7.0, f=7.0
+  Path: S->D->B->C->G, g=9.0, f=9.0
+  Path: S->D->E, g=6.0, f=9.0
+  Path: S->A, g=3.0, f=12.0
+
+EXPANDING:
+  Path: S->D->B->E->G
+  g(G) = 7.0
+  h(G) = 0.0
+  f(G) = 7.0
+  Goal reached
+
+STEP 7
+OPEN LIST:
+  Path: S->D->E, g=6.0, f=9.0
+  Path: S->D->B->C->G, g=9.0, f=9.0
+  Path: S->A, g=3.0, f=12.0
+
+EXPANDING:
+  Path: S->D->E
+  g(E) = 6.0
+  h(E) = 3.0
+  f(E) = 9.0
+    Exploring E->G | g=9.0, h=0.0, f=9.0
+
+STEP 8
+OPEN LIST:
+  Path: S->D->B->C->G, g=9.0, f=9.0
+  Path: S->A, g=3.0, f=12.0
+  Path: S->D->E->G, g=9.0, f=9.0
+
+EXPANDING:
+  Path: S->D->B->C->G
+  g(G) = 9.0
+  h(G) = 0.0
+  f(G) = 9.0
+  Goal reached
+
+STEP 9
+OPEN LIST:
+  Path: S->D->E->G, g=9.0, f=9.0
+  Path: S->A, g=3.0, f=12.0
+
+EXPANDING:
+  Path: S->D->E->G
+  g(G) = 9.0
+  h(G) = 0.0
+  f(G) = 9.0
+  Goal reached
+
+STEP 10
+OPEN LIST:
+  Path: S->A, g=3.0, f=12.0
+
+EXPANDING:
+  Path: S->A
+  g(A) = 3.0
+  h(A) = 9.0
+  f(A) = 12.0
+    Exploring A->B | g=8.0, h=4.0, f=12.0
+    Exploring A->C | g=13.0, h=2.0, f=15.0
+
+STEP 11
+OPEN LIST:
+  Path: S->A->B, g=8.0, f=12.0
+  Path: S->A->C, g=13.0, f=15.0
+
+EXPANDING:
+  Path: S->A->B
+  g(B) = 8.0
+  h(B) = 4.0
+  f(B) = 12.0
+    Exploring B->C | g=10.0, h=2.0, f=12.0
+    Exploring B->E | g=9.0, h=3.0, f=12.0
+
+STEP 12
+OPEN LIST:
+  Path: S->A->B->E, g=9.0, f=12.0
+  Path: S->A->C, g=13.0, f=15.0
+  Path: S->A->B->C, g=10.0, f=12.0
+
+EXPANDING:
+  Path: S->A->B->E
+  g(E) = 9.0
+  h(E) = 3.0
+  f(E) = 12.0
+    Exploring E->G | g=12.0, h=0.0, f=12.0
+
+STEP 13
+OPEN LIST:
+  Path: S->A->B->C, g=10.0, f=12.0
+  Path: S->A->C, g=13.0, f=15.0
+  Path: S->A->B->E->G, g=12.0, f=12.0
+
+EXPANDING:
+  Path: S->A->B->C
+  g(C) = 10.0
+  h(C) = 2.0
+  f(C) = 12.0
+    Exploring C->G | g=14.0, h=0.0, f=14.0
+
+STEP 14
+OPEN LIST:
+  Path: S->A->B->E->G, g=12.0, f=12.0
+  Path: S->A->C, g=13.0, f=15.0
+  Path: S->A->B->C->G, g=14.0, f=14.0
+
+EXPANDING:
+  Path: S->A->B->E->G
+  g(G) = 12.0
+  h(G) = 0.0
+  f(G) = 12.0
+  Goal reached
+
+STEP 15
+OPEN LIST:
+  Path: S->A->B->C->G, g=14.0, f=14.0
+  Path: S->A->C, g=13.0, f=15.0
+
+EXPANDING:
+  Path: S->A->B->C->G
+  g(G) = 14.0
+  h(G) = 0.0
+  f(G) = 14.0
+  Goal reached
+
+STEP 16
+OPEN LIST:
+  Path: S->A->C, g=13.0, f=15.0
+
+EXPANDING:
+  Path: S->A->C
+  g(C) = 13.0
+  h(C) = 2.0
+  f(C) = 15.0
+    Exploring C->G | g=17.0, h=0.0, f=17.0
+
+STEP 17
+OPEN LIST:
+  Path: S->A->C->G, g=17.0, f=17.0
+
+EXPANDING:
+  Path: S->A->C->G
+  g(G) = 17.0
+  h(G) = 0.0
+  f(G) = 17.0
+  Goal reached
+
+--- ALL GOAL PATHS FOUND ---
+Path: S->D->B->E->G, Cost = 7.0
+Path: S->D->B->C->G, Cost = 9.0
+Path: S->D->E->G, Cost = 9.0
+Path: S->A->B->E->G, Cost = 12.0
+Path: S->A->B->C->G, Cost = 14.0
+Path: S->A->C->G, Cost = 17.0
+
+BEST (MINIMUM COST) PATH
+Path: S->D->B->E->G
+Final Cost = 7.0

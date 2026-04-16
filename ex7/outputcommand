@@ -1,0 +1,1 @@
+LC_ALL=C sed 's/[^[:print:]\t]//g' ex7file > ex7.prn

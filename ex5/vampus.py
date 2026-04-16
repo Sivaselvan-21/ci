@@ -1,0 +1,163 @@
+import random
+import sys
+
+SIZE = 0
+world = []
+agent_pos = [0, 0]
+has_gold = False
+wumpus_alive = True
+bump_flag = False
+scream_flag = False
+
+def get_valid_coords(prompt, allow_safety_zone=False):
+    while True:
+        try:
+            inp = input(prompt).split()
+            if len(inp) != 2:
+                print("Enter two numbers (e.g., '1 2').")
+                continue
+            x, y = map(int, inp)
+            if 0 <= x < SIZE and 0 <= y < SIZE:
+                if not allow_safety_zone:
+                    # Safety check: Prevent hazards on agent and neighbors
+                    neighbors = [[agent_pos[0]+dx, agent_pos[1]+dy] for dx, dy in [(-1,0), (1,0), (0,-1), (0,1), (0,0)]]
+                    if [x, y] in neighbors:
+                        print(f"Safety Zone: Cannot place hazards on or next to agent at {agent_pos}.")
+                        continue
+                return x, y
+            print(f"Coordinates must be 0 to {SIZE-1}.")
+        except ValueError:
+            print("Invalid input. Use integers.")
+
+def create_world():
+    global world, SIZE, agent_pos
+    try:
+        SIZE = int(input("Enter grid size: "))
+    except: SIZE = 4
+    world = [["" for _ in range(SIZE)] for _ in range(SIZE)]
+
+    print("\n--- Environment Setup ---")
+    # 1. Set Agent Start Position
+    ax, ay = get_valid_coords("Enter Agent starting coordinates (row col): ", allow_safety_zone=True)
+    agent_pos = [ax, ay]
+
+    # 2. Place Wumpus
+    wx, wy = get_valid_coords("Enter Wumpus coordinates (row col): ")
+    world[wx][wy] = "W"
+
+    # 3. Place Gold
+    while True:
+        gx, gy = get_valid_coords("Enter Gold coordinates (row col): ")
+        if world[gx][gy] == "":
+            world[gx][gy] = "G"
+            break
+        print("Occupied. Choose another spot.")
+
+    # 4. Pit Options
+    print("\nPit Options: 1. Random Count | 2. Manual Coordinates")
+    choice = input("Select (1 or 2): ")
+    safe_zone = [[agent_pos[0]+dx, agent_pos[1]+dy] for dx, dy in [(-1,0), (1,0), (0,-1), (0,1), (0,0)]]
+
+    if choice == "1":
+        count = int(input("How many pits? "))
+        placed = 0
+        while placed < count:
+            px, py = random.randint(0, SIZE-1), random.randint(0, SIZE-1)
+            if world[px][py] == "" and [px, py] not in safe_zone:
+                world[px][py] = "P"
+                placed += 1
+    else:
+        num = int(input("How many pits? "))
+        for i in range(num):
+            while True:
+                px, py = get_valid_coords(f"Enter coordinates for Pit {i+1}: ")
+                if world[px][py] == "":
+                    world[px][py] = "P"
+                    break
+
+def print_initial_map():
+    print("\n--- Initial Environment Setup ---")
+    for i in range(SIZE):
+        for j in range(SIZE):
+            if [i, j] == agent_pos: print("A", end=" ")
+            elif world[i][j] == "": print(".", end=" ")
+            else: print(world[i][j], end=" ")
+        print()
+    print("A:Agent | W:Wumpus | G:Gold | P:Pit")
+    print("---------------------------------")
+
+def display():
+    print("\nCurrent Grid:")
+    for i in range(SIZE):
+        for j in range(SIZE):
+            if [i, j] == agent_pos: print("A", end=" ")
+            else: print(".", end=" ")
+        print()
+    print("A = Agent")
+
+def sensor():
+    global bump_flag, scream_flag
+    x, y = agent_pos
+    stench = breeze = False
+    for dx, dy in [(-1,0), (1,0), (0,-1), (0,1)]:
+        nx, ny = x+dx, y+dy
+        if 0 <= nx < SIZE and 0 <= ny < SIZE:
+            if world[nx][ny] == "W" and wumpus_alive: stench = True
+            if world[nx][ny] == "P": breeze = True
+
+    percepts = [
+        "Strench" if stench else "none",
+        "Breeeez" if breeze else "none",
+        "Glitter" if world[x][y] == "G" else "none",
+        "Bump" if bump_flag else "none",
+        "Scream" if scream_flag else "none"
+    ]
+    print(f"Location: {agent_pos}")
+    print(f"Percepts: {percepts}")
+    bump_flag = False
+    scream_flag = False
+
+def move(dx, dy):
+    global agent_pos, bump_flag
+    nx, ny = agent_pos[0] + dx, agent_pos[1] + dy
+    if 0 <= nx < SIZE and 0 <= ny < SIZE:
+        agent_pos = [nx, ny]
+        if world[nx][ny] == "P":
+            print("Fell in Pit. Game Over."); sys.exit()
+        if world[nx][ny] == "W" and wumpus_alive:
+            print("Killed by Wumpus. Game Over."); sys.exit()
+    else:
+        bump_flag = True
+    display()
+    sensor()
+
+def main():
+    create_world()
+    print_initial_map()
+    display()
+    sensor()
+    while True:
+        cmd = input("\nW:up S:down A:left D:right G:grab F:shoot E:exit - Action: ").upper()
+        if cmd == "W": move(-1,0)
+        elif cmd == "S": move(1,0)
+        elif cmd == "A": move(0,-1)
+        elif cmd == "D": move(0,1)
+        elif cmd == "G":
+            if world[agent_pos[0]][agent_pos[1]] == "G":
+                print("Gold grabbed. Game Cleared!")
+                sys.exit()
+            else:
+                print("No gold here."); display(); sensor()
+        elif cmd == "F":
+            print("Arrow fired.")
+            for dx, dy in [(-1,0), (1,0), (0,-1), (0,1)]:
+                nx, ny = agent_pos[0]+dx, agent_pos[1]+dy
+                if 0 <= nx < SIZE and 0 <= ny < SIZE and world[nx][ny] == "W":
+                    global wumpus_alive, scream_flag
+                    world[nx][ny] = ""; wumpus_alive = False; scream_flag = True
+                    print("Wumpus Dead."); break
+            display(); sensor()
+        elif cmd == "E": break
+
+if __name__ == "__main__":
+    main()

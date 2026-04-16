@@ -1,0 +1,30 @@
+rahul_gandhi,priyanka_gandhi).
+Correct to: "sibling(rahul_gandhi,priyanka_gandhi)"? yes
+true .
+
+?- cousin(rahul_gandhi,varun_gandhi).
+true .
+
+?- father(X,indira_gandhi).
+X = jawaharlal_nehru .
+
+?- sibling(rajiv_gandhi).
+
+?- siblings(X,rajiv_gandhi).
+Correct to: "sibling(X,rajiv_gandhi)"? yes
+
+
+?- uncle(rajiv_gandhi,varun_gandhi).
+true .
+
+?- mother(X,jawaharlal_nehru).
+X = swarup_rani.
+
+?- uncle(rajiv_gandhi,varun_gandhi).
+true .
+?- parent(X,varun_gandhi).
+X = sanjay_gandhi.
+
+
+?- grandfather(jawaharlal_nehru,rajiv_gandhi).
+true 

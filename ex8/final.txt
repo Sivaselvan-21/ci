@@ -1,0 +1,18 @@
+set CSV file name (with .csv): data1.csv
+Enter number of decision trees: 18
+Enter splits (e.g., 60-40,75-25,80-20): 60-40
+
+Columns in dataset: ['accident_id', 'city', 'state', 'latitude', 'longitude', 'date', 'time', 'hour', 'day_of_week', 'is_weekend', 'road_type', 'lanes', 'traffic_signal', 'weather', 'visibility', 'temperature', 'traffic_density', 'cause', 'accident_severity', 'vehicles_involved', 'casualties', 'is_peak_hour', 'festival', 'risk_score']
+Enter target column name: traffic_density
+
+--- Processing Split: 60-40 ---
+Confusion Matrix:
+[[4439  684]
+ [1344 1533]]
+TN: 4439  FP: 684
+FN: 1344  TP: 1533
+
+
+===== Performance Table =====
+Split      Accuracy   Precision  Recall     F1 Score  
+60-40      0.7465 0.7402 0.7465 0.7377

@@ -1,0 +1,94 @@
+[23bcs119@mepcolinux ci]$python3 dfs2.py
+Enter number of vertices: 8
+Enter vertex: A
+Node 'A' added.
+Enter vertex: B
+Node 'B' added.
+Enter vertex: C
+Node 'C' added.
+Enter vertex: D
+Node 'D' added.
+Enter vertex: E
+Node 'E' added.
+Enter vertex: F
+Node 'F' added.
+Enter vertex: G
+Node 'G' added.
+Enter vertex: H
+Node 'H' added.
+Enter number of edges: 7
+From: A
+To: B
+Edge added between 'A' and 'B'.
+From: A
+To: C
+Edge added between 'A' and 'C'.
+From: C
+To: D
+Edge added between 'C' and 'D'.
+From: C
+To: E
+Edge added between 'C' and 'E'.
+From: E
+To: F
+Edge added between 'E' and 'F'.
+From: E
+To: G
+Edge added between 'E' and 'G'.
+From: G
+To: H
+Edge added between 'G' and 'H'.
+Enter start node: A
+Enter goal node: H
+Traversal order (L/R): R
+
+INITIAL FRINGE: ['A']
+
+POP A
+FRINGE: []
+
+Path: A
+PUSH B
+FRINGE: ['B']
+PUSH C
+FRINGE: ['B', 'C']
+
+POP C
+FRINGE: ['B']
+
+Path: A->C
+PUSH D
+FRINGE: ['B', 'D']
+PUSH E
+FRINGE: ['B', 'D', 'E']
+
+POP E
+FRINGE: ['B', 'D']
+
+Path: A->C->E
+PUSH F
+FRINGE: ['B', 'D', 'F']
+PUSH G
+FRINGE: ['B', 'D', 'F', 'G']
+
+POP G
+FRINGE: ['B', 'D', 'F']
+
+Path: A->C->E->G
+PUSH H
+FRINGE: ['B', 'D', 'F', 'H']
+
+POP H
+FRINGE: ['B', 'D', 'F']
+
+Path: A->C->E->G->H
+
+GOAL FOUND
+
+Menu:
+1. Add node
+2. Add edge
+3. Remove node
+4. Display adjacency list
+5. DFS
+6. Exit

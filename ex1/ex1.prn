@@ -1,0 +1,852 @@
+Script started on Tue Jan 27 11:45:04 2026
+[23bcs119@mepcolinux ci]$cat bfs3.py
+graph = {}
+
+def addnode(node):
+    if node in graph:
+        print(f"Node '{node}' already exists.")
+    else:
+        graph[node] = set()
+        print(f"Node '{node}' added.")
+
+def removenode(node):
+    if node not in graph:
+        print(f"Node '{node}' does not exist.")
+        return
+    # Remove node from neighbors' adjacency sets
+    for neighbor in graph[node]:
+        graph[neighbor].remove(node)
+    # Remove the node itself
+    del graph[node]
+    print(f"Node '{node}' and associated edges removed.")
+
+def addedge(node1, node2):
+    if node1 not in graph or node2 not in graph:
+        print("Both nodes must exist before adding an edge.")
+        return
+    graph[node1].add(node2)
+    graph[node2].add(node1)
+    print(f"Edge added between '{node1}' and '{node2}'.")
+
+def displayadjacency():
+    print("\nAdjacency List:")
+    for node in graph:
+        neighbors = ', '.join(sorted(graph[node]))
+        print(f"{node}: {neighbors if neighbors else 'No neighbors'}")
+
+def BFS(start, goal, order='L'):
+    if start not in graph or goal not in graph:
+        print("Start or goal node not found.")
+        return
+    visited = set()
+    fringe = [start]
+    path = []
+
+    print("\nINITIAL FRINGE:", fringe)
+
+    while fringe:
+        current = fringe.pop(0)
+        print("\nPOP", current)
+        print("FRINGE:", fringe)
+
+        if current in visited:
+            continue
+
+        path.append(current)
+        print("\nPath:", "->".join(path))
+
+        visited.add(current)
+
+        if current == goal:
+            print("\nGOAL FOUND")
+            return
+
+        neighbors = sorted(graph[current])
+        if order == 'R':
+            neighbors.reverse()
+
+        for neighbor in neighbors:
+            if neighbor not in visited and neighbor not in fringe:
+                fringe.append(neighbor)
+                print("PUSH", neighbor)
+                print("FRINGE:", fringe)
+
+    print("\nGOAL NOT REACHABLE")
+
+noofverts = int(input("Enter number of vertices: "))
+for _ in range(noofverts):
+    node = input("Enter vertex: ")
+    addnode(node)
+
+noofedges = int(input("Enter number of edges: "))
+for _ in range(noofedges):
+    u = input("From: ")
+    v = input("To: ")
+    addedge(u, v)
+
+start = input("Enter start node: ")
+goal = input("Enter goal node: ")
+order = input("Traversal order (L/R): ").upper()
+
+BFS(start, goal, order)
+
+# Menu-driven interaction
+while True:
+    print("\nMenu:")
+    print("1. Add node")
+    print("2. Add edge")
+    print("3. Remove node")
+    print("4. Display adjacency list")
+    print("5. BFS")
+    print("6. Exit")
+
+    choice = input("Enter the choice: ")
+
+    if choice == '1':
+        u = input("Enter the node to add: ")
+        addnode(u)
+    elif choice == '2':
+        u = input("Enter node 1: ")
+        v = input("Enter node 2: ")
+        addedge(u, v)
+    elif choice == '3':
+        u = input("Enter the node to remove: ")
+        removenode(u)
+    elif choice == '4':
+        displayadjacency()
+    elif choice == '5':
+        start = input("Enter start node: ")
+        goal = input("Enter goal node: ")
+        order = input("Traversal order (L/R): ").upper()
+        BFS(start, goal, order)
+    elif choice == '6':
+        print("Exiting...")
+        break
+    else:
+        print("Invalid choice. Please try again.")
+[23bcs119@mepcolinux ci]$python3 bfs3.py
+Enter number of vertices: 8
+Enter vertex: A
+Node 'A' added.
+Enter vertex: B
+Node 'B' added.
+Enter vertex: C
+Node 'C' added.
+Enter vertex: D
+Node 'D' added.
+Enter vertex: E
+Node 'E' added.
+Enter vertex: F
+Node 'F' added.
+Enter vertex: G
+Node 'G' added.
+Enter vertex: H
+Node 'H' added.
+Enter number of edges: 7
+From: A
+To: B
+Edge added between 'A' and 'B'.
+From: A
+To: C
+Edge added between 'A' and 'C'.
+From: C
+To: D
+Edge added between 'C' and 'D'.
+From: C
+To: E
+Edge added between 'C' and 'E'.
+From: E
+To: F
+Edge added between 'E' and 'F'.
+From: E
+To: G
+Edge added between 'E' and 'G'.
+From: G
+To: H
+Edge added between 'G' and 'H'.
+Enter start node: A
+Enter goal node: H
+Traversal order (L/R): R
+
+INITIAL FRINGE: ['A']
+
+POP A
+FRINGE: []
+
+Path: A
+PUSH C
+FRINGE: ['C']
+PUSH B
+FRINGE: ['C', 'B']
+
+POP C
+FRINGE: ['B']
+
+Path: A->C
+PUSH E
+FRINGE: ['B', 'E']
+PUSH D
+FRINGE: ['B', 'E', 'D']
+
+POP B
+FRINGE: ['E', 'D']
+
+Path: A->C->B
+
+POP E
+FRINGE: ['D']
+
+Path: A->C->B->E
+PUSH G
+FRINGE: ['D', 'G']
+PUSH F
+FRINGE: ['D', 'G', 'F']
+
+POP D
+FRINGE: ['G', 'F']
+
+Path: A->C->B->E->D
+
+POP G
+FRINGE: ['F']
+
+Path: A->C->B->E->D->G
+PUSH H
+FRINGE: ['F', 'H']
+
+POP F
+FRINGE: ['H']
+
+Path: A->C->B->E->D->G->F
+
+POP H
+FRINGE: []
+
+Path: A->C->B->E->D->G->F->H
+
+GOAL FOUND
+
+Menu:
+1. Add node
+2. Add edge
+3. Remove node
+4. Display adjacency list
+5. BFS
+6. Exit
+Enter the choice: 6
+Exiting...
+[23bcs119@mepcolinux ci]$cat dfs2.py
+graph = {}
+
+def addnode(node):
+    if node in graph:
+        print(f"Node '{node}' already exists.")
+    else:
+        graph[node] = set()
+        print(f"Node '{node}' added.")
+
+def removenode(node):
+    if node not in graph:
+        print(f"Node '{node}' does not exist.")
+        return
+    # Remove node from neighbor
+    for neighbor in graph[node]:
+        graph[neighbor].remove(node)
+    # Remove the node itself
+    del graph[node]
+    print(f"Node '{node}' and associated edges removed.")
+
+def addedge(node1, node2):
+    if node1 not in graph or node2 not in graph:
+        print("Both nodes must exist before adding an edge.")
+        return
+    graph[node1].add(node2)
+    graph[node2].add(node1)
+    print(f"Edge added between '{node1}' and '{node2}'.")
+
+def displayadjacency():
+    print("\nAdjacency List:")
+    for node in graph:
+        neighbors = ', '.join(sorted(graph[node]))
+        print(f"{node}: {neighbors if neighbors else 'No neighbors'}")
+
+def DFS(start, goal, order='L'):
+    if start not in graph or goal not in graph:
+        print("Start or goal node not found.")
+        return
+    visited = set()
+    fringe = [start]
+    path = []
+
+    print("\nINITIAL FRINGE:", fringe)
+
+    while fringe:
+        current = fringe.pop()
+        print("\nPOP", current)
+        print("FRINGE:", fringe)
+
+        if current in visited:
+            continue
+
+        path.append(current)
+        print("\nPath:", "->".join(path))
+
+        visited.add(current)
+
+        if current == goal:
+            print("\nGOAL FOUND")
+            return
+
+        neighbors=sorted(graph[current])
+	
+        if order == 'L':
+            neighbors.reverse()
+
+        for neighbor in neighbors:
+            if neighbor not in visited and neighbor not in fringe:
+                fringe.append(neighbor)
+                print("PUSH", neighbor)
+                print("FRINGE:", fringe)
+
+    print("\nGOAL NOT REACHABLE")
+
+noofverts = int(input("Enter number of vertices: "))
+for _ in range(noofverts):
+    node = input("Enter vertex: ")
+    addnode(node)
+
+noofedges = int(input("Enter number of edges: "))
+for _ in range(noofedges):
+    u = input("From: ")
+    v = input("To: ")
+    addedge(u, v)
+
+start = input("Enter start node: ")
+goal = input("Enter goal node: ")
+order = input("Traversal order (L/R): ").upper()
+
+DFS(start, goal, order)
+
+# Menu-driven interaction
+while True:
+    print("\nMenu:")
+    print("1. Add node")
+    print("2. Add edge")
+    print("3. Remove node")
+    print("4. Display adjacency list")
+    print("5. DFS")
+    print("6. Exit")
+
+    choice = input("Enter the choice: ")
+
+    if choice == '1':
+        u = input("Enter the node to add: ")
+        addnode(u)
+    elif choice == '2':
+        u = input("Enter node 1: ")
+        v = input("Enter node 2: ")
+        addedge(u, v)
+    elif choice == '3':
+        u = input("Enter the node to remove: ")
+        removenode(u)
+    elif choice == '4':
+        displayadjacency()
+    elif choice == '5':
+        start = input("Enter start node: ")
+        goal = input("Enter goal node: ")
+        order = input("Traversal order (L/R): ").upper()
+        DFS(start, goal, order)
+    elif choice == '6':
+        print("Exiting...")
+        break
+    else:
+        print("Invalid choice. Please try again.")
+[23bcs119@mepcolinux ci]$ls
+bfs.py	bfs2.py  bfs3.py  dfs.py  dfs2.py  dfsout  ex1.prn  ucs.py  ucs2.py  ucsout
+[23bcs119@mepcolinux ci]$cat dfsout
+[23bcs119@mepcolinux ci]$python3 dfs2.py
+Enter number of vertices: 8
+Enter vertex: A
+Node 'A' added.
+Enter vertex: B
+Node 'B' added.
+Enter vertex: C
+Node 'C' added.
+Enter vertex: D
+Node 'D' added.
+Enter vertex: E
+Node 'E' added.
+Enter vertex: F
+Node 'F' added.
+Enter vertex: G
+Node 'G' added.
+Enter vertex: H
+Node 'H' added.
+Enter number of edges: 7
+From: A
+To: B
+Edge added between 'A' and 'B'.
+From: A
+To: C
+Edge added between 'A' and 'C'.
+From: C
+To: D
+Edge added between 'C' and 'D'.
+From: C
+To: E
+Edge added between 'C' and 'E'.
+From: E
+To: F
+Edge added between 'E' and 'F'.
+From: E
+To: G
+Edge added between 'E' and 'G'.
+From: G
+To: H
+Edge added between 'G' and 'H'.
+Enter start node: A
+Enter goal node: H
+Traversal order (L/R): R
+
+INITIAL FRINGE: ['A']
+
+POP A
+FRINGE: []
+
+Path: A
+PUSH B
+FRINGE: ['B']
+PUSH C
+FRINGE: ['B', 'C']
+
+POP C
+FRINGE: ['B']
+
+Path: A->C
+PUSH D
+FRINGE: ['B', 'D']
+PUSH E
+FRINGE: ['B', 'D', 'E']
+
+POP E
+FRINGE: ['B', 'D']
+
+Path: A->C->E
+PUSH F
+FRINGE: ['B', 'D', 'F']
+PUSH G
+FRINGE: ['B', 'D', 'F', 'G']
+
+POP G
+FRINGE: ['B', 'D', 'F']
+
+Path: A->C->E->G
+PUSH H
+FRINGE: ['B', 'D', 'F', 'H']
+
+POP H
+FRINGE: ['B', 'D', 'F']
+
+Path: A->C->E->G->H
+
+GOAL FOUND
+
+Menu:
+1. Add node
+2. Add edge
+3. Remove node
+4. Display adjacency list
+5. DFS
+6. Exit
+[23bcs119@mepcolinux ci]$ls
+bfs.py	bfs2.py  bfs3.py  dfs.py  dfs2.py  dfsout  ex1.prn  ucs.py  ucs2.py  ucsout
+[23bcs119@mepcolinux ci]$cat ucs2.py
+import heapq
+def create_initial_graph():
+   
+    graph = {}
+
+    n = int(input("Enter number of vertices: "))
+
+    print("\nEnter vertex names:")
+    for _ in range(n):
+        node = input("Vertex name: ")
+        graph[node] = []
+
+    e = int(input("\nEnter number of edges: "))
+    print("Enter edges (source destination cost):")
+
+    for _ in range(e):
+        u = input("Source: ")
+        v = input("Destination: ")
+        cost = float(input("Cost: "))
+
+        if u in graph and v in graph:
+            graph[u].append((v, cost))
+        else:
+            print("Invalid nodes, edge skipped")
+
+    return graph
+
+def add_node(graph):
+    node = input("Enter new node name: ")
+    if node in graph:
+        print("Node already exists")
+        return
+    graph[node] = []
+    print("Node added")
+
+def remove_node(graph):
+    node = input("Enter node to remove: ")
+    if node not in graph:
+        print("Node does not exist")
+        return
+
+    graph.pop(node)
+
+    for n in graph:
+        graph[n] = [(nbr, c) for nbr, c in graph[n] if nbr != node]
+
+    print("Node and associated edges removed")
+
+def add_edge(graph):
+    u = input("Enter source node: ")
+    v = input("Enter destination node: ")
+    cost = float(input("Enter edge cost: "))
+
+    if u in graph and v in graph:
+        graph[u].append((v, cost))
+        print("Edge added")
+    else:
+        print("Invalid nodes")
+
+def display_graph(graph):
+    print("\nAdjacency List:")
+    for node in graph:
+        print(f"{node} : {graph[node]}")
+
+
+# ---------------- UNIFORM COST SEARCH ----------------
+
+def ucs(graph, start, goal):
+    open_list = []
+    heapq.heappush(open_list, (0, start))
+
+    g_cost = {start: 0}
+    parent = {start: None}
+
+    print("\n--- UCS TRACE ---")
+
+    while open_list:
+        current_cost, current = heapq.heappop(open_list)
+
+        print(f"\nExpanding node: {current}")
+        print(f"g({current}) = {current_cost}")
+
+        if current == goal:
+            path = []
+            while current is not None:
+                path.append(current)
+                current = parent[current]
+            return path[::-1], g_cost[goal]
+
+        print("Exploring neighbors:")
+
+        for neighbor, cost in graph[current]:
+            new_cost = g_cost[current] + cost
+
+            print(
+                f"  Neighbor: {neighbor}, "
+                f"Edge cost: {cost}, "
+                f"g({neighbor}) = {new_cost}"
+            )
+
+            if neighbor not in g_cost or new_cost < g_cost[neighbor]:
+                g_cost[neighbor] = new_cost
+                parent[neighbor] = current
+                heapq.heappush(open_list, (new_cost, neighbor))
+                print("Updated & added to OPEN list")
+            else:
+                print("Not updated (higher cost)")
+
+        print("\nCurrent OPEN list:")
+        for cost, node in open_list:
+            print(f"  Node: {node}, g(n): {cost}")
+
+    return None, float('inf')
+
+
+def run_ucs(graph):
+    start = input("Enter start node: ")
+    goal = input("Enter goal node: ")
+
+    if start not in graph or goal not in graph:
+        print("Invalid start or goal node")
+        return
+
+    path, cost = ucs(graph, start, goal)
+
+    if path is None:
+        print("No path found")
+    else:
+        print("\n--- RESULT ---")
+        print("Path:", path)
+        print("Final Cost:", cost)
+
+
+def menu(graph):
+    while True:
+        print("\n--- MENU ---")
+        print("1. Add Node")
+        print("2. Remove Node")
+        print("3. Add Edge")
+        print("4. Display Adjacency List")
+        print("5. Uniform Cost Search (UCS)")
+        print("6. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            add_node(graph)
+        elif choice == '2':
+            remove_node(graph)
+        elif choice == '3':
+            add_edge(graph)
+        elif choice == '4':
+            display_graph(graph)
+        elif choice == '5':
+            run_ucs(graph)
+        elif choice == '6':
+            print("Program terminated")
+            break
+        else:
+            print("Invalid choice")
+
+
+graph = create_initial_graph()
+menu(graph)
+[23bcs119@mepcolinux ci]$ls
+bfs.py	bfs2.py  bfs3.py  dfs.py  dfs2.py  dfsout  ex1.prn  ucs.py  ucs2.py  ucsout
+[23bcs119@mepcolinux ci]$cat ucsout
+Enter number of vertices: 14
+
+Enter vertex names:
+Vertex name: A
+Vertex name: B
+Vertex name: C
+Vertex name: D
+Vertex name: E
+Vertex name: F
+Vertex name: G
+Vertex name: H
+Vertex name: I
+Vertex name: J
+Vertex name: K
+Vertex name: L
+Vertex name: M
+Vertex name: N
+
+Enter number of edges: 14
+Enter edges (source destination cost):
+Source: A
+Destination: C
+Cost: 1
+Source: A
+Destination: B
+Cost: 2
+Source: B
+Destination: D
+Cost: 4
+Source: D
+Destination: E
+Cost: 1
+Source: E
+Destination: F
+Cost: 3
+Source: E
+Destination: H
+Cost: 7
+Source: F
+Destination: G
+Cost: 1
+Source: G
+Destination: I
+Cost: 4
+Source: G
+Destination: J
+Cost: 5
+Source: I
+Destination: K
+Cost: 2
+Source: K
+Destination: L
+Cost: 3
+Source: K
+Destination: M
+Cost: 1
+Source: L
+Destination: M
+Cost: 5
+Source: M
+Destination: N
+Cost: 6
+
+--- MENU ---
+1. Add Node
+2. Remove Node
+3. Add Edge
+4. Display Adjacency List
+5. Uniform Cost Search (UCS)
+6. Exit
+Enter your choice: 5
+Enter start node: A
+Enter goal node: N
+
+--- UCS TRACE ---
+
+Expanding node: A
+g(A) = 0
+Exploring neighbors:
+  Neighbor: C, Edge cost: 1.0, g(C) = 1.0
+Updated & added to OPEN list
+  Neighbor: B, Edge cost: 2.0, g(B) = 2.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: C, g(n): 1.0
+  Node: B, g(n): 2.0
+
+Expanding node: C
+g(C) = 1.0
+Exploring neighbors:
+
+Current OPEN list:
+  Node: B, g(n): 2.0
+
+Expanding node: B
+g(B) = 2.0
+Exploring neighbors:
+  Neighbor: D, Edge cost: 4.0, g(D) = 6.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: D, g(n): 6.0
+
+Expanding node: D
+g(D) = 6.0
+Exploring neighbors:
+  Neighbor: E, Edge cost: 1.0, g(E) = 7.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: E, g(n): 7.0
+
+Expanding node: E
+g(E) = 7.0
+Exploring neighbors:
+  Neighbor: F, Edge cost: 3.0, g(F) = 10.0
+Updated & added to OPEN list
+  Neighbor: H, Edge cost: 7.0, g(H) = 14.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: F, g(n): 10.0
+  Node: H, g(n): 14.0
+
+Expanding node: F
+g(F) = 10.0
+Exploring neighbors:
+  Neighbor: G, Edge cost: 1.0, g(G) = 11.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: G, g(n): 11.0
+  Node: H, g(n): 14.0
+
+Expanding node: G
+g(G) = 11.0
+Exploring neighbors:
+  Neighbor: I, Edge cost: 4.0, g(I) = 15.0
+Updated & added to OPEN list
+  Neighbor: J, Edge cost: 5.0, g(J) = 16.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: H, g(n): 14.0
+  Node: I, g(n): 15.0
+  Node: J, g(n): 16.0
+
+Expanding node: H
+g(H) = 14.0
+Exploring neighbors:
+
+Current OPEN list:
+  Node: I, g(n): 15.0
+  Node: J, g(n): 16.0
+
+Expanding node: I
+g(I) = 15.0
+Exploring neighbors:
+  Neighbor: K, Edge cost: 2.0, g(K) = 17.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: J, g(n): 16.0
+  Node: K, g(n): 17.0
+
+Expanding node: J
+g(J) = 16.0
+Exploring neighbors:
+
+Current OPEN list:
+  Node: K, g(n): 17.0
+
+Expanding node: K
+g(K) = 17.0
+Exploring neighbors:
+  Neighbor: L, Edge cost: 3.0, g(L) = 20.0
+Updated & added to OPEN list
+  Neighbor: M, Edge cost: 1.0, g(M) = 18.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: M, g(n): 18.0
+  Node: L, g(n): 20.0
+
+Expanding node: M
+g(M) = 18.0
+Exploring neighbors:
+  Neighbor: N, Edge cost: 6.0, g(N) = 24.0
+Updated & added to OPEN list
+
+Current OPEN list:
+  Node: L, g(n): 20.0
+  Node: N, g(n): 24.0
+
+Expanding node: L
+g(L) = 20.0
+Exploring neighbors:
+  Neighbor: M, Edge cost: 5.0, g(M) = 25.0
+Not updated (higher cost)
+
+Current OPEN list:
+  Node: N, g(n): 24.0
+
+Expanding node: N
+g(N) = 24.0
+
+--- RESULT ---
+Path: ['A', 'B', 'D', 'E', 'F', 'G', 'I', 'K', 'M', 'N']
+Final Cost: 24.0
+
+--- MENU ---
+1. Add Node
+2. Remove Node
+3. Add Edge
+4. Display Adjacency List
+5. Uniform Cost Search (UCS)
+6. Exit
+[23bcs119@mepcolinux ci]$exit
+exit
+
+Script done on Tue Jan 27 11:50:25 2026

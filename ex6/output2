@@ -1,0 +1,31 @@
+
+?- [grossary].
+true.
+
+?- get_price(rice, P).
+P = 50.
+
+?- subtotal(rice, 2, S).
+S = 100.
+
+?- order([[rice,2], [milk,3], [sugar,1]]).
+----- BILL -----
+rice x 2 = 100
+milk x 3 = 90
+sugar x 1 = 45
+----------------
+Total Amount: 235
+true.
+
+?- order([rice,3]).
+----- BILL -----
+false.
+
+?- order([[rice,3]]).
+----- BILL -----
+rice x 3 = 150
+----------------
+Total Amount: 150
+true.
+
+?- 

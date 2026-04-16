@@ -1,0 +1,234 @@
+Script started on Tue Mar  3 12:00:51 2026
+[23bcs119@mepcolinux ex4]$cat newprogram2.py
+import math
+
+def safe_log2(x: float) -> float:
+    return math.log(x, 2) if x > 0 else 0.0
+
+def print_dataset_table(rows, headers, title="DATASET PREVIEW"):
+    print(f"\n--- {title} ---")
+    widths = {h: len(h) for h in headers}
+    for row in rows:
+        for h in headers:
+            widths[h] = max(widths[h], len(str(row[h])))
+    
+    header_line = " | ".join(f"{h:<{widths[h]}}" for h in headers)
+    print(header_line)
+    print("-" * len(header_line))
+    for row in rows:
+        print(" | ".join(f"{str(row[h]):<{widths[h]}}" for h in headers))
+    print()
+
+def entropy(rows, target):
+    label_counts = {}
+    for row in rows:
+        y = row[target]
+        label_counts[y] = label_counts.get(y, 0) + 1
+    total = len(rows)
+    H = 0.0
+    for c in label_counts.values():
+        p = c / total
+        H += -p * safe_log2(p)
+    return H, label_counts
+
+def step_by_step_report(rows, attributes, target):
+    all_headers = attributes + [target]
+    print_dataset_table(rows, all_headers)
+    
+    n_total = len(rows)
+    H_S, total_label_counts = entropy(rows, target)
+    labels_sorted = sorted(total_label_counts.keys())
+
+    print(f"Total examples: {n_total}")
+    print(f"Entropy H(S) = {H_S:.4f}")
+    print("-" * 40)
+
+    ig_results = []
+
+    for attr in attributes:
+        print(f"\nATTRIBUTE: {attr}")
+        groups = {}
+        for row in rows:
+            v = row[attr]
+            groups.setdefault(v, []).append(row)
+
+        # Print Distribution Table for the Attribute ---
+        tbl_headers = [attr] + labels_sorted + ["Total"]
+        attr_table_data = []
+        
+        for val in sorted(groups.keys()):
+            subset = groups[val]
+            _, counts_v = entropy(subset, target)
+            row_data = {attr: val}
+            for L in labels_sorted:
+                row_data[L] = counts_v.get(L, 0)
+            row_data["Total"] = len(subset)
+            attr_table_data.append(row_data)
+        
+        print_dataset_table(attr_table_data, tbl_headers, title=f"Split Table for {attr}")
+        print("Column wise total:",n_total)
+        # --- Calculation Logic ---
+        weighted_terms = []
+        H_after = 0.0
+        
+        for val in sorted(groups.keys()):
+            subset = groups[val]
+            n_v = len(subset)
+            H_v, counts_v = entropy(subset, target)
+            
+            weight = n_v / n_total
+            H_after += weight * H_v
+            parts_v = [f"-({counts_v.get(L,0)}/{n_v})*log2({counts_v.get(L,0)}/{n_v})" 
+                       for L in labels_sorted if counts_v.get(L,0) > 0]
+            
+            print(f"H(S_{val}) = {' + '.join(parts_v) if parts_v else '0'} = {H_v:.4f}")
+            weighted_terms.append(f"({n_v}/{n_total})*{H_v:.4f}")
+
+        IG = H_S - H_after
+        print(f"\nWeighted Entropy H(S|{attr}) = {' + '.join(weighted_terms)} = {H_after:.4f}")
+        print(f"Information Gain IG(S, {attr}) = {H_S:.4f} - {H_after:.4f} = {IG:.4f}")
+        ig_results.append((attr, IG))
+        print("=" * 60)
+    print("\n" + "="*40)
+    print("SUMMARY OF INFORMATION GAIN")
+    print("="*40)
+    for attr, IG in ig_results:
+        print(f"- {attr:15s} -> IG = {IG:.4f}")
+    
+    best_attr, best_IG = max(ig_results, key=lambda x: x[1])
+    print(f"\nBest Attribute (Root Node) = {best_attr} (IG = {best_IG:.4f})")
+def load_dataset_from_txt(filename):
+    with open(filename, 'r') as f:
+        lines = f.read().strip().splitlines()
+    headers = [h.strip() for h in lines[0].split(',')]
+    data = []
+    for line in lines[1:]:
+        values = [v.strip() for v in line.split(',')]
+        data.append({headers[i]: values[i] for i in range(len(headers))})
+    return data[:25], headers[:-1], headers[-1]
+
+if __name__ == "__main__":
+    try:
+        filename = input("Enter dataset filename: ").strip()
+        data, attributes, target = load_dataset_from_txt(filename)
+        step_by_step_report(data, attributes, target)
+    except Exception as e:
+        print(f"Error: {e}")
+
+[23bcs119@mepcolinux ex4]$python3 newprogram2.py
+Enter dataset filename: buys_computer.txt
+
+--- DATASET PREVIEW ---
+age         | income | student | credit_rating | buys_computer
+--------------------------------------------------------------
+middle_aged | medium | yes     | fair          | yes          
+middle_aged | low    | yes     | excellent     | yes          
+middle_aged | low    | yes     | excellent     | yes          
+middle_aged | high   | no      | excellent     | yes          
+middle_aged | high   | no      | excellent     | yes          
+middle_aged | low    | yes     | excellent     | yes          
+senior      | medium | no      | fair          | yes          
+youth       | medium | no      | excellent     | no           
+senior      | medium | yes     | excellent     | no           
+senior      | medium | no      | excellent     | no           
+youth       | low    | yes     | fair          | yes          
+youth       | low    | no      | excellent     | no           
+senior      | low    | no      | excellent     | no           
+middle_aged | medium | no      | excellent     | yes          
+senior      | low    | no      | excellent     | no           
+youth       | medium | yes     | fair          | yes          
+senior      | medium | no      | excellent     | no           
+middle_aged | high   | yes     | excellent     | yes          
+youth       | low    | no      | fair          | no           
+senior      | low    | no      | excellent     | no           
+senior      | high   | yes     | excellent     | no           
+senior      | low    | yes     | excellent     | no           
+senior      | high   | yes     | fair          | yes          
+senior      | high   | yes     | fair          | yes          
+senior      | medium | no      | fair          | yes          
+
+Total examples: 25
+Entropy H(S) = 0.9896
+----------------------------------------
+
+ATTRIBUTE: age
+
+--- Split Table for age ---
+age         | no | yes | Total
+------------------------------
+middle_aged | 0  | 8   | 8    
+senior      | 8  | 4   | 12   
+youth       | 3  | 2   | 5    
+
+Column wise total: 25
+H(S_middle_aged) = -(8/8)*log2(8/8) = 0.0000
+H(S_senior) = -(8/12)*log2(8/12) + -(4/12)*log2(4/12) = 0.9183
+H(S_youth) = -(3/5)*log2(3/5) + -(2/5)*log2(2/5) = 0.9710
+
+Weighted Entropy H(S|age) = (8/25)*0.0000 + (12/25)*0.9183 + (5/25)*0.9710 = 0.6350
+Information Gain IG(S, age) = 0.9896 - 0.6350 = 0.3546
+============================================================
+
+ATTRIBUTE: income
+
+--- Split Table for income ---
+income | no | yes | Total
+-------------------------
+high   | 1  | 5   | 6    
+low    | 6  | 4   | 10   
+medium | 4  | 5   | 9    
+
+Column wise total: 25
+H(S_high) = -(1/6)*log2(1/6) + -(5/6)*log2(5/6) = 0.6500
+H(S_low) = -(6/10)*log2(6/10) + -(4/10)*log2(4/10) = 0.9710
+H(S_medium) = -(4/9)*log2(4/9) + -(5/9)*log2(5/9) = 0.9911
+
+Weighted Entropy H(S|income) = (6/25)*0.6500 + (10/25)*0.9710 + (9/25)*0.9911 = 0.9012
+Information Gain IG(S, income) = 0.9896 - 0.9012 = 0.0884
+============================================================
+
+ATTRIBUTE: student
+
+--- Split Table for student ---
+student | no | yes | Total
+--------------------------
+no      | 8  | 5   | 13   
+yes     | 3  | 9   | 12   
+
+Column wise total: 25
+H(S_no) = -(8/13)*log2(8/13) + -(5/13)*log2(5/13) = 0.9612
+H(S_yes) = -(3/12)*log2(3/12) + -(9/12)*log2(9/12) = 0.8113
+
+Weighted Entropy H(S|student) = (13/25)*0.9612 + (12/25)*0.8113 = 0.8893
+Information Gain IG(S, student) = 0.9896 - 0.8893 = 0.1003
+============================================================
+
+ATTRIBUTE: credit_rating
+
+--- Split Table for credit_rating ---
+credit_rating | no | yes | Total
+--------------------------------
+excellent     | 10 | 7   | 17   
+fair          | 1  | 7   | 8    
+
+Column wise total: 25
+H(S_excellent) = -(10/17)*log2(10/17) + -(7/17)*log2(7/17) = 0.9774
+H(S_fair) = -(1/8)*log2(1/8) + -(7/8)*log2(7/8) = 0.5436
+
+Weighted Entropy H(S|credit_rating) = (17/25)*0.9774 + (8/25)*0.5436 = 0.8386
+Information Gain IG(S, credit_rating) = 0.9896 - 0.8386 = 0.1510
+============================================================
+
+========================================
+SUMMARY OF INFORMATION GAIN
+========================================
+- age             -> IG = 0.3546
+- income          -> IG = 0.0884
+- student         -> IG = 0.1003
+- credit_rating   -> IG = 0.1510
+
+Best Attribute (Root Node) = age (IG = 0.3546)
+[23bcs119@mepcolinux ex4]$exit
+exit
+
+Script done on Tue Mar  3 12:01:15 2026

@@ -1,0 +1,330 @@
+Script started on Tue Apr  7 11:34:20 2026
+[23bcs119@mepcolinux ex6]$cat family.pl
+% ----------- Gender -----------
+
+male(motilal_nehru).
+male(jawaharlal_nehru).
+male(feroze_gandhi).
+male(rajiv_gandhi).
+male(sanjay_gandhi).
+male(rahul_gandhi).
+
+female(swarup_rani).
+female(kamala_nehru).
+female(indira_gandhi).
+female(sonia_gandhi).
+female(priyanka_gandhi).
+
+% ----------- Parent -----------
+
+parent(motilal_nehru, jawaharlal_nehru).
+parent(swarup_rani, jawaharlal_nehru).
+
+parent(jawaharlal_nehru, indira_gandhi).
+parent(kamala_nehru, indira_gandhi).
+
+parent(indira_gandhi, rajiv_gandhi).
+parent(feroze_gandhi, rajiv_gandhi).
+
+parent(indira_gandhi, sanjay_gandhi).
+parent(feroze_gandhi, sanjay_gandhi).
+
+parent(rajiv_gandhi, rahul_gandhi).
+parent(sonia_gandhi, rahul_gandhi).
+
+parent(rajiv_gandhi, priyanka_gandhi).
+parent(sonia_gandhi, priyanka_gandhi).
+
+% ----------- Marriage -----------
+
+married(jawaharlal_nehru, kamala_nehru).
+married(kamala_nehru, jawaharlal_nehru).
+
+married(indira_gandhi, feroze_gandhi).
+married(feroze_gandhi, indira_gandhi).
+
+married(rajiv_gandhi, sonia_gandhi).
+married(sonia_gandhi, rajiv_gandhi).
+
+% ----------- Basic Relations -----------
+
+father(X,Y) :-
+    parent(X,Y),
+    male(X).
+
+mother(X,Y) :-
+    parent(X,Y),
+    female(X).
+
+child(X,Y) :-
+    parent(Y,X).
+
+% ----------- Grand Relations -----------
+
+grandparent(X,Y) :-
+    parent(X,Z),
+    parent(Z,Y).
+
+grandfather(X,Y) :-
+    grandparent(X,Y),
+    male(X).
+
+grandmother(X,Y) :-
+    grandparent(X,Y),
+    female(X).
+
+% ----------- Great Grand Relations -----------
+
+great_grandparent(X,Y) :-
+    parent(X,A),
+    parent(A,B),
+    parent(B,Y).
+
+great_grandfather(X,Y) :-
+    great_grandparent(X,Y),
+    male(X).
+
+great_grandmother(X,Y) :-
+    great_grandparent(X,Y),
+    female(X).
+
+% ----------- Siblings -----------
+
+sibling(X,Y) :-
+    parent(Z,X),
+    parent(Z,Y),
+    X \= Y.
+
+brother(X,Y) :-
+    sibling(X,Y),
+    male(X).
+
+sister(X,Y) :-
+    sibling(X,Y),
+    female(X).
+
+% ----------- Uncle & Aunt -----------
+
+uncle(X,Y) :-
+    brother(X,Z),
+    parent(Z,Y).
+
+aunt(X,Y) :-
+    sister(X,Z),
+    parent(Z,Y).
+
+% ----------- Cousins -----------
+
+cousin(X,Y) :-
+    parent(A,X),
+    parent(B,Y),
+    sibling(A,B).
+
+% ----------- In-Law Relations -----------
+
+father_in_law(X,Y) :-
+    married(Y,Z),
+    father(X,Z).
+
+mother_in_law(X,Y) :-
+    married(Y,Z),
+    mother(X,Z).
+
+brother_in_law(X,Y) :-
+    married(Y,Z),
+    brother(X,Z).
+
+sister_in_law(X,Y) :-
+    married(Y,Z),
+    sister(X,Z).
+
+% ----------- Husband & Wife -----------
+
+husband(X,Y) :-
+    married(X,Y),
+    male(X).
+
+wife(X,Y) :-
+    married(X,Y),
+    female(X).
+
+% ----------- Ancestor -----------
+
+ancestor(X,Y) :-
+    parent(X,Y).
+
+ancestor(X,Y) :-
+    parent(X,Z),
+    ancestor(Z,Y).
+[23bcs119@mepcolinux ex6]$cat output
+rahul_gandhi,priyanka_gandhi).
+Correct to: "sibling(rahul_gandhi,priyanka_gandhi)"? yes
+true .
+
+?- cousin(rahul_gandhi,varun_gandhi).
+true .
+
+?- father(X,indira_gandhi).
+X = jawaharlal_nehru .
+
+?- sibling(rajiv_gandhi).
+
+?- siblings(X,rajiv_gandhi).
+Correct to: "sibling(X,rajiv_gandhi)"? yes
+
+
+?- uncle(rajiv_gandhi,varun_gandhi).
+true .
+
+?- mother(X,jawaharlal_nehru).
+X = swarup_rani.
+
+?- uncle(rajiv_gandhi,varun_gandhi).
+true .
+?- parent(X,varun_gandhi).
+X = sanjay_gandhi.
+
+
+?- grandfather(jawaharlal_nehru,rajiv_gandhi).
+true 
+[23bcs119@mepcolinux ex6]$cat grossary.pl
+% ----------- FACTS (Item, Price) -----------
+
+item(rice, 50).
+item(wheat, 40).
+item(milk, 30).
+item(sugar, 45).
+item(oil, 120).
+
+% ----------- ADD NEW ITEM -----------
+
+add_item(Name, Price) :-
+    assertz(item(Name, Price)),
+    write('Item added successfully!'), nl.
+
+% ----------- GET PRICE -----------
+
+get_price(Item, Price) :-
+    item(Item, Price).
+
+% ----------- CALCULATE SUBTOTAL -----------
+
+% Subtotal = Price * Quantity
+subtotal(Item, Quantity, Subtotal) :-
+    item(Item, Price),
+    Subtotal is Price * Quantity.
+
+% ----------- ORDER MULTIPLE ITEMS -----------
+
+% Base case
+total([], 0).
+
+% Recursive case
+total([[Item, Qty] | Rest], Total) :-
+    subtotal(Item, Qty, Sub),
+    total(Rest, RestTotal),
+    Total is Sub + RestTotal.
+
+% ----------- DISPLAY BILL -----------
+
+print_bill([]).
+print_bill([[Item, Qty] | Rest]) :-
+    subtotal(Item, Qty, Sub),
+    write(Item), write(' x '), write(Qty),
+    write(' = '), write(Sub), nl,
+    print_bill(Rest).
+
+% ----------- FINAL ORDER SYSTEM -----------
+
+order(Items) :-
+    write('----- BILL -----'), nl,
+    print_bill(Items),
+    total(Items, Total),
+    write('----------------'), nl,
+    write('Total Amount: '), write(Total), nl.
+[23bcs119@mepcolinux ex6]$cat output2
+
+?- [grossary].
+true.
+
+?- get_price(rice, P).
+P = 50.
+
+?- subtotal(rice, 2, S).
+S = 100.
+
+?- order([[rice,2], [milk,3], [sugar,1]]).
+----- BILL -----
+rice x 2 = 100
+milk x 3 = 90
+sugar x 1 = 45
+----------------
+Total Amount: 235
+true.
+
+?- order([rice,3]).
+----- BILL -----
+false.
+
+?- order([[rice,3]]).
+----- BILL -----
+rice x 3 = 150
+----------------
+Total Amount: 150
+true.
+
+?- 
+[23bcs119@mepcolinux ex6]$cat calc2.pl
+% Addition
+add(X, Y, Result) :- Result is X + Y.
+
+% Subtraction
+sub(X, Y, Result) :- Result is X - Y.
+
+% Multiplication
+mul(X, Y, Result) :- Result is X * Y.
+
+% Division (Floating point)
+div(X, Y, Result) :- 
+    Y =\= 0, 
+    Result is X / Y.
+
+% Integer Division
+idiv(X, Y, Result) :- 
+    Y =\= 0, 
+    Result is X // Y.
+
+% Modulo (Remainder)
+mod_op(X, Y, Result) :- 
+    Y =\= 0, 
+    Result is X mod Y.
+
+% Power (Exponentiation)
+pow(X, Y, Result) :- Result is X ** Y.
+
+[23bcs119@mepcolinux ex6]$cat output3
+?- [calc].
+true.
+
+?- add(10,20,R).
+R = 30.
+
+?- sub(20,10,R).
+R = 10.
+
+?- mul(30,40,R).
+R = 1200.
+
+?- div(60,30,R).
+R = 2.
+?- mod_op(30,15,R).
+R = 0.
+
+?- pow(3,2,R).
+R = 9.
+
+?- 
+[23bcs119@mepcolinux ex6]$exit
+exit
+
+Script done on Tue Apr  7 11:34:49 2026

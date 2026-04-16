@@ -1,0 +1,1001 @@
+User_ID	Age	Gender	Occupation	Device_Type	Daily_Phone_Hours	Social_Media_Hours	Work_Productivity_Score	Sleep_Hours	Stress_Level	App_Usage_Count	Caffeine_Intake_Cups	Weekend_Screen_Time_Hours
+U1	58	Male	Professional	Android	1.3	6.7	6	8.8	4	42	1	8.7
+U2	25	Male	Professional	Android	1.2	1.5	5	6.4	1	51	3	5.1
+U3	19	Male	Student	iOS	5.3	5.7	5	9	4	14	5	6.3
+U4	35	Female	Business Owner	iOS	5.8	2.5	2	5.7	3	36	6	12.8
+U5	33	Male	Freelancer	Android	7.9	1.3	4	5.7	3	37	5	9.9
+U6	32	Female	Student	Android	10.9	4.2	9	6.3	7	34	5	3.6
+U7	26	Male	Student	iOS	5.6	6.1	8	6.7	3	5	3	2.9
+U8	24	Male	Freelancer	iOS	8.5	1.9	4	7.8	3	6	6	12.8
+U9	52	Female	Business Owner	Android	9.4	2.5	3	6.4	4	17	3	3.1
+U10	23	Female	Student	iOS	2.8	1.1	1	4.5	2	7	0	2.7
+U11	55	Other	Professional	Android	8.3	1.1	8	5.7	9	59	1	7.3
+U12	45	Other	Business Owner	Android	12	6.7	6	4.9	10	12	1	9.2
+U13	20	Female	Business Owner	iOS	11.1	5.6	3	5	4	22	6	4.2
+U14	19	Female	Freelancer	iOS	9.7	4.1	10	6	1	36	6	2.3
+U15	23	Male	Professional	Android	1.1	2.5	3	5.3	8	29	5	9.2
+U16	31	Male	Business Owner	Android	11.6	5.5	9	8.9	5	29	0	7.9
+U17	32	Other	Professional	Android	2.3	7.8	8	4.6	1	40	1	3.4
+U18	50	Female	Student	Android	10.8	5.7	8	4.5	5	57	0	5.3
+U19	56	Female	Business Owner	Android	3.3	4.3	2	4.5	1	19	1	5.8
+U20	19	Other	Professional	Android	3.9	4.2	1	6	5	45	2	11.8
+U21	53	Other	Business Owner	Android	3.3	2.6	7	8.4	1	54	6	7.5
+U22	30	Other	Professional	iOS	9.5	6.9	2	8.4	6	28	2	3.9
+U23	59	Female	Freelancer	Android	10.9	4.9	5	8.8	8	31	6	2.7
+U24	52	Female	Student	iOS	5.5	5.1	4	8.3	8	40	2	12.5
+U25	44	Female	Business Owner	Android	3.7	4.2	7	6.7	6	40	5	12
+U26	32	Female	Professional	iOS	10.1	7.5	8	7.3	10	31	4	6.9
+U27	46	Male	Business Owner	iOS	1.2	6.5	4	5.7	10	15	3	11.1
+U28	55	Other	Student	iOS	9.7	6.1	1	6.3	10	18	2	5.1
+U29	35	Male	Professional	iOS	11.7	1.6	1	4.9	10	42	4	4.7
+U30	18	Other	Student	iOS	11.4	7.8	3	5.4	7	41	0	8.9
+U31	28	Other	Student	Android	2.1	2.3	1	4.3	9	59	1	10.4
+U32	45	Other	Freelancer	Android	5.8	3.8	4	5.9	10	25	0	7.9
+U33	39	Other	Professional	Android	8.2	2.3	8	7.8	6	41	3	4.1
+U34	35	Other	Freelancer	iOS	3.4	2	7	7.1	6	21	1	9.8
+U35	27	Female	Student	Android	11.8	6.3	5	6	1	40	0	13.3
+U36	31	Male	Freelancer	Android	7.1	2	9	8.4	5	58	0	6.1
+U37	39	Female	Professional	iOS	3.8	2.4	9	4.4	2	46	1	5.3
+U38	24	Male	Freelancer	iOS	3.9	6.4	6	7.9	5	57	1	5.1
+U39	23	Other	Professional	Android	8.3	0.5	2	4.3	5	52	1	3.8
+U40	42	Male	Student	iOS	1.8	2	2	6.6	10	54	4	7
+U41	24	Male	Student	iOS	3.4	4.7	2	5.1	2	47	6	12.4
+U42	40	Female	Professional	iOS	9.6	6.2	3	4.6	7	46	0	3.6
+U43	40	Female	Student	iOS	1.2	0.6	5	7.9	8	6	0	5.1
+U44	56	Male	Professional	Android	1	7.1	9	7.7	10	23	6	2.1
+U45	34	Female	Professional	iOS	1.5	6.4	7	6.6	9	17	2	5.6
+U46	20	Male	Student	iOS	9	0.9	6	8.7	4	56	5	8.6
+U47	47	Female	Freelancer	iOS	5.5	6.9	10	5.1	9	6	6	2.1
+U48	52	Male	Freelancer	iOS	5.2	4.9	9	7.1	1	6	4	6.9
+U49	25	Female	Freelancer	iOS	10.4	1.5	9	4.3	8	37	5	9
+U50	42	Male	Business Owner	iOS	8.1	4.5	4	5.6	2	26	3	9.8
+U51	23	Female	Student	Android	9.7	6	1	8.6	4	34	6	10.1
+U52	53	Female	Freelancer	Android	6.8	7.2	9	7.5	10	37	2	12.3
+U53	36	Female	Freelancer	iOS	4	5	6	6.9	9	32	3	13
+U54	58	Male	Professional	Android	6	7.3	2	4.5	1	33	4	9.1
+U55	57	Female	Professional	Android	11.7	5.9	10	5.8	3	12	5	14
+U56	41	Female	Professional	iOS	6.3	2.6	1	4.8	4	35	3	8.2
+U57	54	Male	Student	Android	3.8	7.8	5	8.9	9	24	6	5.6
+U58	30	Female	Professional	iOS	3.5	2.3	8	4.3	1	49	6	12.2
+U59	22	Female	Freelancer	Android	2	7.9	5	4.9	6	40	5	2.7
+U60	20	Male	Freelancer	Android	9.8	6.8	1	8.2	8	43	0	12.2
+U61	60	Female	Freelancer	Android	1.4	4.7	6	7.2	8	5	2	6.4
+U62	32	Male	Professional	Android	9.7	7.3	2	5.8	5	45	0	10.5
+U63	36	Female	Professional	iOS	5	3.4	3	7.7	3	45	1	8.2
+U64	23	Female	Freelancer	iOS	3.9	7.7	6	5	6	24	0	3.7
+U65	32	Female	Freelancer	Android	5.7	5.2	8	5.7	2	16	6	2.7
+U66	24	Female	Professional	iOS	5.7	1.8	7	5.4	1	31	6	7.6
+U67	42	Other	Professional	Android	8.1	4.6	3	8.2	5	13	6	9.6
+U68	35	Other	Professional	Android	3.7	4.2	10	5.6	4	58	4	11.3
+U69	47	Other	Student	Android	10.2	2.4	4	5.3	10	16	4	5.4
+U70	58	Other	Business Owner	iOS	7.4	8	10	4.7	9	41	5	9.6
+U71	41	Other	Student	Android	3.7	0.9	2	7.2	6	55	0	12.4
+U72	28	Male	Student	iOS	4.3	7.1	5	6.1	4	9	6	7.1
+U73	41	Other	Freelancer	Android	11.5	4.6	6	6.6	7	52	3	11.1
+U74	40	Female	Student	iOS	9.1	6.1	6	7.4	10	27	6	10.6
+U75	31	Other	Freelancer	iOS	4.5	7.2	1	5.8	7	15	6	11.6
+U76	60	Other	Student	Android	10.1	7.5	5	6.8	2	53	5	9.1
+U77	35	Female	Student	Android	6.7	3.8	1	5.1	8	45	3	8
+U78	59	Other	Business Owner	Android	10.2	5.5	10	5	8	60	5	12
+U79	22	Female	Business Owner	iOS	6.6	3	6	7	9	36	2	12.8
+U80	56	Female	Professional	iOS	1.6	4.7	7	7.6	6	8	4	11.5
+U81	58	Male	Professional	iOS	4.7	3.8	10	7.6	5	32	3	11.1
+U82	28	Other	Professional	iOS	11.7	3.9	4	4.6	4	6	6	3
+U83	52	Other	Business Owner	Android	11.3	2.8	9	6.4	1	16	1	2.5
+U84	33	Other	Professional	iOS	8.6	6.7	1	9	3	44	0	13.7
+U85	28	Male	Freelancer	iOS	10.8	1.2	5	4.6	4	28	5	13.4
+U86	47	Male	Student	Android	2.9	2.1	7	7.5	8	10	4	5
+U87	42	Other	Student	iOS	9.3	7.1	5	7.9	5	26	6	8.9
+U88	35	Female	Business Owner	Android	9.4	1.3	7	7.9	4	35	6	2.4
+U89	58	Other	Professional	iOS	11.4	4.4	9	6.6	9	30	5	11.9
+U90	53	Male	Freelancer	Android	10.3	7.9	10	4.9	10	20	3	11.7
+U91	32	Female	Student	iOS	6.4	7.9	9	5.3	6	39	1	4.4
+U92	38	Other	Freelancer	Android	10.3	3.3	9	4.7	10	33	1	7.6
+U93	21	Other	Professional	Android	1.5	7.3	1	6.9	4	44	3	12
+U94	32	Female	Freelancer	Android	1.4	2.3	1	5.3	1	11	1	10.5
+U95	20	Female	Professional	iOS	3.7	4.3	10	4.1	8	15	2	10.6
+U96	38	Male	Freelancer	iOS	3	5	7	7.5	6	16	6	7.6
+U97	43	Male	Business Owner	iOS	8.7	2.7	4	6.5	1	25	4	4.7
+U98	35	Other	Business Owner	iOS	5.5	6.4	3	5.5	6	29	5	8.6
+U99	22	Male	Freelancer	Android	10.7	2.9	6	4.5	1	8	6	2.8
+U100	31	Other	Student	iOS	9.4	2.8	3	7.6	9	35	3	13.7
+U101	54	Male	Freelancer	Android	3.4	8	6	5.9	1	28	3	10.7
+U102	38	Female	Freelancer	Android	1.3	1.5	6	5.2	2	17	1	11.3
+U103	31	Male	Student	Android	4.6	6.4	4	8.2	6	10	0	13.7
+U104	59	Other	Freelancer	Android	5.8	6	3	4	3	6	3	5.3
+U105	49	Female	Business Owner	iOS	3.8	7.2	4	5.1	9	17	0	13.3
+U106	43	Female	Student	iOS	1.3	6.9	3	7.3	5	28	1	9.8
+U107	59	Other	Business Owner	iOS	9.9	1.9	3	7.3	10	21	6	9.8
+U108	47	Male	Freelancer	iOS	7.8	7.9	1	5	9	46	1	8.3
+U109	27	Female	Freelancer	iOS	11.8	6.5	3	8.7	10	46	3	13.7
+U110	34	Male	Freelancer	Android	6	6.7	3	6.4	6	5	2	10.6
+U111	26	Female	Business Owner	iOS	9.1	3.2	4	6.7	9	9	6	3.9
+U112	33	Other	Professional	Android	9.4	5.7	7	5.2	1	38	3	11.9
+U113	53	Female	Business Owner	iOS	10.3	6.8	1	5.3	5	44	5	9.9
+U114	52	Male	Student	iOS	5.1	6	5	6.2	4	43	0	11.6
+U115	34	Other	Student	Android	3	6.4	8	8.3	4	8	6	8.9
+U116	55	Female	Business Owner	Android	8.8	1.1	4	5.3	5	56	0	6.5
+U117	45	Female	Student	iOS	2.6	3.6	9	4.3	7	28	0	6.5
+U118	55	Other	Freelancer	Android	4.9	6.7	10	6.7	6	53	1	2.9
+U119	43	Other	Student	iOS	8.4	7.1	6	6.4	9	15	3	5.9
+U120	41	Male	Professional	Android	7.2	1.6	4	8.9	10	16	3	12.9
+U121	32	Female	Student	Android	5.5	7.2	3	5.8	1	43	5	9.3
+U122	26	Female	Student	iOS	5.8	4.3	4	4.8	5	45	0	2.5
+U123	50	Female	Business Owner	Android	3.9	7.5	1	4.6	2	12	1	7.9
+U124	49	Female	Professional	iOS	6.2	3.8	8	8.7	8	20	5	10.9
+U125	23	Male	Freelancer	iOS	3.7	1.7	10	7.4	5	10	0	6
+U126	21	Male	Student	Android	5.2	4	7	6.8	10	26	4	2.3
+U127	25	Female	Business Owner	Android	9.1	3.7	8	7.9	9	16	3	7.7
+U128	27	Other	Student	Android	10.6	1.6	7	4.2	6	29	4	4.4
+U129	58	Male	Professional	iOS	9.4	7.4	5	7.6	2	51	3	9.4
+U130	28	Male	Professional	iOS	5.9	4.6	5	9	1	53	4	6.3
+U131	45	Female	Business Owner	iOS	2.3	3.4	10	5.6	4	48	1	8.4
+U132	56	Male	Professional	Android	5.6	6.1	1	6.4	10	29	6	10.3
+U133	22	Female	Professional	Android	1.9	4.5	1	7.5	7	12	6	12.4
+U134	42	Male	Business Owner	iOS	9.3	3.5	3	7.7	7	14	1	4.3
+U135	42	Female	Student	iOS	5.1	0.8	7	8.6	5	6	1	13.9
+U136	56	Female	Student	Android	3.1	1.4	7	7.7	10	57	5	4.8
+U137	47	Female	Freelancer	Android	10	7.6	6	8.1	6	19	5	5.5
+U138	51	Female	Business Owner	Android	7.8	3.7	4	7.4	3	58	1	11.2
+U139	34	Male	Business Owner	Android	4.2	1.5	6	7.4	10	8	1	5.5
+U140	53	Other	Business Owner	Android	2.5	3.3	1	8	9	51	2	9
+U141	18	Male	Business Owner	Android	3.3	6.8	1	8.6	5	59	4	12
+U142	25	Male	Freelancer	iOS	11.2	1	8	4.1	8	52	4	8.7
+U143	52	Female	Professional	Android	2.4	4.1	6	7	6	21	2	7.3
+U144	35	Other	Professional	Android	7.8	3	7	4.2	5	51	3	5.2
+U145	59	Male	Business Owner	iOS	7.2	5.3	9	5.2	5	6	1	6.2
+U146	39	Male	Freelancer	iOS	5	1.4	9	5.9	3	34	2	5.7
+U147	25	Male	Student	Android	2.5	5.1	7	8.2	9	5	1	9.6
+U148	36	Other	Business Owner	Android	6.2	1.4	5	6.4	7	36	0	8.8
+U149	45	Female	Student	iOS	4.8	1.9	1	7.2	2	15	6	10.9
+U150	28	Male	Freelancer	iOS	2.8	2.8	9	8.6	6	43	2	9.3
+U151	47	Other	Business Owner	iOS	6.9	6.5	1	5	7	56	0	3
+U152	18	Female	Freelancer	iOS	3.4	4.8	1	4.9	1	16	4	9.1
+U153	34	Female	Freelancer	iOS	8	3.6	8	7.4	6	52	1	12.5
+U154	50	Male	Professional	Android	9.8	3.6	8	4.6	10	59	5	7.3
+U155	29	Male	Professional	iOS	7.5	5.9	4	5.6	9	24	0	8.5
+U156	50	Other	Student	iOS	5.8	1	7	7.7	4	37	3	8.6
+U157	24	Other	Professional	Android	3.1	6.7	5	6.2	2	16	2	12.8
+U158	58	Female	Professional	iOS	5.2	3.2	2	5.7	6	19	6	6.7
+U159	37	Female	Freelancer	Android	5.3	3.2	7	9	7	52	1	4.7
+U160	58	Male	Student	iOS	3.9	4.5	10	8.1	9	15	1	11.3
+U161	50	Other	Student	iOS	11.9	0.7	8	6.5	10	15	3	9.2
+U162	56	Female	Professional	Android	5	2.9	2	5.7	10	30	5	13.5
+U163	30	Male	Professional	iOS	4.9	7.5	5	6.3	3	27	3	11.9
+U164	27	Female	Professional	Android	2.1	7.1	7	5	1	41	0	6.5
+U165	41	Female	Student	Android	8.2	7.7	1	8.1	1	24	2	5.4
+U166	28	Male	Student	iOS	2.4	7.8	7	6.1	7	41	2	5.7
+U167	52	Female	Student	Android	11.5	6.2	3	4.2	5	27	5	2.8
+U168	51	Female	Student	Android	3.9	0.6	2	8.8	3	55	3	8.7
+U169	18	Other	Professional	Android	2.3	0.8	7	4.4	1	55	6	11.5
+U170	56	Other	Freelancer	Android	11	7.3	1	6.1	3	40	1	8.4
+U171	38	Other	Professional	Android	5.1	6.9	9	6.6	2	56	2	6.1
+U172	49	Male	Freelancer	iOS	2.5	4.3	7	4.3	1	56	5	10.4
+U173	19	Other	Student	Android	5.8	4	9	8.8	8	26	4	8.9
+U174	25	Female	Freelancer	Android	11.1	1.2	2	5.2	1	10	5	2.1
+U175	41	Other	Professional	Android	11.6	7.6	7	6.6	2	12	2	2.6
+U176	37	Other	Professional	iOS	10.3	7.8	9	4.9	6	18	3	3.9
+U177	33	Male	Student	Android	3.7	5.6	5	6.5	3	57	2	3.3
+U178	21	Other	Professional	iOS	5.1	4.7	8	5	8	11	2	12.9
+U179	33	Male	Student	Android	5.3	1.3	6	6.6	7	31	2	10.9
+U180	54	Female	Freelancer	Android	7.9	2.2	1	4.4	3	51	1	12.5
+U181	23	Male	Student	Android	3.8	6.5	10	6.1	3	41	4	7.3
+U182	23	Female	Student	Android	10.2	2.9	2	5	8	49	3	9.6
+U183	49	Male	Student	iOS	3.6	2.2	2	4.6	5	50	2	11.8
+U184	22	Male	Student	iOS	5.9	5.6	8	4.9	2	52	2	7.7
+U185	52	Female	Freelancer	iOS	2.7	5.2	6	7.4	1	23	3	11.6
+U186	26	Male	Student	iOS	2.2	1.5	5	4	4	25	6	5.4
+U187	26	Male	Business Owner	iOS	6.1	6.6	4	4.9	5	29	3	4.9
+U188	60	Female	Business Owner	iOS	6	7.2	6	7.9	9	40	5	12.5
+U189	48	Male	Freelancer	Android	2.5	2.9	1	6.7	8	46	5	8.2
+U190	53	Other	Professional	Android	3.6	4.5	9	4.4	4	42	5	11.6
+U191	28	Other	Freelancer	iOS	2	7.4	6	5.4	4	18	3	4.6
+U192	34	Male	Business Owner	iOS	1.4	2.2	9	8.1	1	25	4	2.8
+U193	51	Other	Student	Android	3.3	4.3	7	5.9	6	41	0	13.3
+U194	56	Other	Freelancer	Android	3	7.6	4	6.8	3	39	0	9
+U195	45	Male	Student	iOS	2.8	4.9	5	7.7	1	33	4	5.1
+U196	31	Female	Student	iOS	4.5	5.6	5	7.4	2	30	0	7.2
+U197	52	Other	Student	iOS	5	3.3	9	5.7	10	54	2	5.3
+U198	30	Male	Freelancer	iOS	4	3	4	8.1	1	43	3	4.6
+U199	37	Other	Freelancer	Android	8.4	5	4	8.6	3	49	1	3.6
+U200	43	Male	Professional	iOS	8.4	1	8	8.6	4	26	4	7.9
+U201	60	Male	Business Owner	Android	5.1	3.1	2	8.9	9	53	5	13.8
+U202	59	Female	Student	iOS	2.5	2.8	5	7.8	4	17	3	13.6
+U203	41	Female	Business Owner	iOS	5.3	1.4	10	8.4	3	17	1	6.8
+U204	46	Male	Professional	iOS	1.8	4.5	6	8.5	6	5	4	11.9
+U205	51	Female	Student	iOS	5.5	4.8	9	7.4	1	13	6	9.6
+U206	46	Male	Business Owner	Android	6.6	1.7	7	8.6	5	11	5	12.5
+U207	25	Male	Freelancer	iOS	7.5	6	2	8.3	7	15	5	9.6
+U208	33	Male	Freelancer	Android	3.4	7.3	2	4.4	10	10	2	6.4
+U209	32	Female	Business Owner	iOS	7.2	7.2	6	4.2	9	13	3	3.7
+U210	22	Male	Student	iOS	1.9	5.7	4	6.4	3	58	6	4.2
+U211	39	Female	Business Owner	iOS	2.5	4.3	9	6.8	8	48	5	7.2
+U212	19	Female	Freelancer	iOS	11.1	5.4	5	5.5	1	6	5	12.6
+U213	55	Other	Freelancer	iOS	11.4	2.1	1	5.2	3	13	1	7.1
+U214	53	Female	Professional	Android	4.3	7.2	8	7.4	4	57	1	14
+U215	32	Female	Professional	iOS	3.1	3.4	3	5.1	9	59	2	7.1
+U216	55	Female	Freelancer	Android	7	5.9	9	5.3	2	52	2	6.7
+U217	32	Female	Freelancer	Android	11.1	1.2	10	6	1	13	4	7.6
+U218	18	Other	Business Owner	iOS	1.1	6.4	6	5.3	7	36	3	6.1
+U219	22	Female	Business Owner	Android	8.5	3.5	5	7	2	5	2	12.5
+U220	58	Other	Professional	Android	7.2	5.6	3	6.8	10	42	4	10.1
+U221	21	Other	Student	iOS	4.5	3	10	4.3	10	27	0	6.1
+U222	32	Male	Business Owner	Android	3.1	7.9	1	4.6	5	14	6	13.1
+U223	22	Other	Student	iOS	6.5	6.9	2	4.4	7	17	1	7.7
+U224	20	Other	Student	Android	2.6	2	10	7.1	3	23	3	4.2
+U225	39	Female	Business Owner	Android	7.3	2.3	6	7.8	5	52	1	8.8
+U226	22	Female	Business Owner	iOS	2	6.9	4	6.6	10	19	0	7.2
+U227	50	Other	Freelancer	Android	10.9	7.8	5	7	8	15	4	13.8
+U228	33	Female	Student	iOS	9.6	5.8	7	5.3	8	59	5	2.5
+U229	35	Other	Business Owner	Android	10.3	2.9	7	8.8	8	41	0	3.6
+U230	60	Other	Freelancer	Android	2.5	6.5	8	6.3	2	20	6	2.8
+U231	49	Female	Business Owner	Android	4.9	5	9	5.3	4	29	3	13.6
+U232	31	Female	Student	iOS	10.3	1.7	3	7.8	3	42	0	10.1
+U233	52	Other	Student	iOS	4.8	3.4	8	6.1	10	12	3	8.9
+U234	26	Other	Freelancer	Android	5.6	7.8	3	7.9	2	15	0	2
+U235	54	Male	Professional	Android	10.3	7.6	7	7.6	1	45	3	11.4
+U236	54	Other	Freelancer	iOS	8.5	5.8	3	5.2	7	37	4	12.5
+U237	48	Female	Student	iOS	2.2	2	9	7.7	5	21	1	10.7
+U238	33	Female	Business Owner	Android	6.2	6.4	8	4.6	1	29	1	2.6
+U239	48	Other	Professional	iOS	6	5.6	8	7.8	5	41	0	9.9
+U240	44	Other	Freelancer	iOS	2.9	3.3	7	6.7	3	26	6	3.5
+U241	30	Male	Freelancer	iOS	10.1	0.9	1	5.3	6	50	6	13.6
+U242	24	Male	Student	Android	3.1	2.6	1	8	1	40	2	8.5
+U243	24	Male	Business Owner	Android	8.6	6.1	2	8	8	57	0	8.2
+U244	60	Female	Business Owner	Android	4.8	7.5	6	4.8	1	46	2	6.1
+U245	45	Female	Freelancer	iOS	10.7	2.4	1	5.5	1	54	6	7.1
+U246	40	Female	Professional	iOS	6.7	1.8	3	4.6	2	10	1	10.9
+U247	45	Other	Student	iOS	4.3	6.1	6	6.5	9	23	2	4.2
+U248	44	Female	Freelancer	Android	10	1.8	2	8.3	8	60	1	2.5
+U249	47	Male	Freelancer	Android	3.4	3.3	4	7	6	25	2	10.2
+U250	21	Other	Freelancer	iOS	5	5.6	8	6.1	9	13	1	13.6
+U251	59	Female	Business Owner	Android	2.6	0.5	8	8.8	8	44	1	3.4
+U252	59	Female	Business Owner	iOS	3.1	4.9	8	7.3	1	59	2	10
+U253	24	Other	Freelancer	iOS	10.6	7.3	10	4.7	1	18	2	8.8
+U254	21	Female	Student	iOS	7.3	2.6	8	8.5	8	15	1	5.4
+U255	43	Other	Business Owner	Android	4.3	3.2	1	7.9	9	30	5	9.7
+U256	39	Other	Professional	iOS	5.3	5.9	6	5.3	3	11	0	12.1
+U257	24	Male	Professional	iOS	3.1	2.9	5	8.1	3	56	4	9.5
+U258	33	Other	Freelancer	Android	4.9	3.7	4	4.8	3	29	5	4.1
+U259	30	Female	Professional	Android	2.7	2.4	7	4.8	5	26	3	14
+U260	30	Male	Professional	iOS	3.4	3.1	10	4.8	4	58	4	7
+U261	52	Female	Freelancer	iOS	11.7	4.8	7	5.5	8	15	2	6.6
+U262	46	Other	Student	iOS	1.6	6.8	1	7.6	9	59	1	4.4
+U263	26	Female	Freelancer	iOS	2.6	7.7	4	4.6	7	39	3	12.5
+U264	45	Female	Student	Android	7.2	4.1	6	6	6	29	2	2.5
+U265	29	Other	Student	Android	7.6	4	6	7.3	3	51	4	3.7
+U266	35	Other	Professional	Android	10.1	7.6	2	7.6	2	12	2	2
+U267	47	Male	Business Owner	iOS	2.9	4.8	3	7.7	3	54	4	6.1
+U268	33	Male	Freelancer	iOS	3.6	6.2	5	9	4	36	0	12
+U269	22	Male	Student	iOS	11	3.4	10	8.9	4	55	2	9.4
+U270	46	Male	Business Owner	Android	4.4	2.5	6	5.5	7	11	1	13.7
+U271	53	Male	Professional	Android	1.1	6.8	5	4.5	8	36	0	4.8
+U272	24	Female	Business Owner	iOS	10.1	5.2	8	4.8	6	48	0	11.5
+U273	21	Male	Freelancer	Android	9.3	2.7	8	7.2	2	23	3	12.7
+U274	59	Other	Professional	Android	10.9	7.2	9	7.6	10	43	3	2.3
+U275	52	Other	Student	iOS	9.5	1.7	3	6.6	3	41	5	3
+U276	18	Male	Freelancer	iOS	6.9	4.3	8	6.6	10	41	3	3.5
+U277	23	Male	Business Owner	iOS	10.4	5.9	5	6.8	2	13	6	8.9
+U278	33	Female	Business Owner	Android	2.9	6.3	8	4.2	8	38	6	9.9
+U279	28	Female	Student	Android	1.8	7	2	4.8	7	21	3	7.1
+U280	44	Other	Freelancer	iOS	3.3	0.7	5	7.2	3	59	5	5.3
+U281	49	Male	Professional	iOS	10.6	5.3	1	5.2	4	58	1	6.1
+U282	48	Female	Professional	iOS	2	5.8	10	7.9	10	37	6	9
+U283	31	Male	Student	iOS	11.9	6.1	2	7.5	2	40	0	5
+U284	43	Female	Business Owner	iOS	8.4	5.6	4	7.8	7	34	5	5.2
+U285	21	Male	Freelancer	iOS	5.3	2.8	8	8.1	4	19	3	13.7
+U286	28	Male	Business Owner	Android	8.5	2.5	5	7.2	9	7	3	6.2
+U287	42	Other	Freelancer	Android	9	3.8	10	5.2	5	31	4	3.7
+U288	18	Other	Business Owner	Android	5.6	3.3	8	4.7	10	35	6	6.3
+U289	42	Other	Professional	Android	5.6	7.6	5	4.3	6	13	6	11.4
+U290	34	Male	Professional	iOS	5.4	0.6	8	6.9	5	12	4	9
+U291	47	Male	Freelancer	Android	10	3.5	3	6.7	5	8	6	2.5
+U292	36	Male	Business Owner	iOS	10.7	6.8	6	7	1	35	5	3.1
+U293	45	Male	Student	iOS	3.2	0.9	1	4	2	55	4	5.4
+U294	53	Other	Professional	iOS	9	7.6	10	8.4	8	13	2	10.5
+U295	60	Female	Business Owner	iOS	6.2	2	3	6.1	3	29	1	3.5
+U296	49	Other	Business Owner	iOS	8.6	5.5	7	6	2	15	1	8.7
+U297	27	Other	Student	Android	2.4	1.5	6	8.3	3	19	5	6.9
+U298	30	Male	Business Owner	iOS	7.9	7	5	8.1	9	18	6	10.8
+U299	36	Other	Business Owner	Android	8.5	3.4	3	7.9	1	5	2	11
+U300	31	Male	Student	iOS	8.8	1.7	4	4.6	9	59	5	2.4
+U301	21	Male	Professional	Android	6.4	3.6	7	6.4	3	55	5	8.9
+U302	55	Female	Student	iOS	10.8	1	2	4.3	10	44	5	11
+U303	52	Female	Student	iOS	7.4	7.3	9	7.3	1	27	1	12.5
+U304	21	Female	Professional	iOS	7.8	1.1	3	5.1	1	38	6	5.5
+U305	38	Other	Student	iOS	1.4	1.8	2	8.5	9	52	5	11.4
+U306	21	Male	Business Owner	Android	11.4	0.6	3	8	8	15	0	7.8
+U307	21	Male	Freelancer	Android	6.1	5	1	5.9	3	59	0	7.7
+U308	55	Male	Student	Android	11.5	6.1	5	8.3	9	27	1	6.2
+U309	48	Female	Professional	iOS	7.4	1.3	3	4.2	3	14	5	14
+U310	50	Male	Professional	iOS	2	5.6	8	7	8	59	6	8.8
+U311	51	Other	Business Owner	Android	5.6	6.9	3	7.2	8	33	4	4.2
+U312	28	Male	Freelancer	Android	10.6	7.6	4	7.5	3	41	0	11.5
+U313	21	Male	Student	iOS	8.8	6.7	7	6.5	10	34	6	5.6
+U314	50	Other	Student	iOS	8.3	3	5	4.7	10	49	3	13.5
+U315	23	Male	Professional	Android	4.2	1	6	6.3	9	18	5	8.7
+U316	29	Other	Student	iOS	1.5	3.4	2	6.1	9	52	0	13.7
+U317	22	Other	Student	Android	10.9	6.6	7	5.2	6	14	2	6.4
+U318	56	Other	Freelancer	iOS	11.5	6.6	5	7	10	5	2	8.5
+U319	22	Other	Business Owner	Android	7.9	5.6	1	5.4	1	48	3	4.9
+U320	33	Other	Professional	Android	6	1.4	4	8.4	10	21	4	4.6
+U321	43	Other	Freelancer	iOS	6.2	2.3	6	4.3	10	49	1	8.7
+U322	25	Female	Freelancer	iOS	4.4	1.2	3	7.6	10	57	1	4.4
+U323	54	Male	Professional	iOS	5	7.9	3	4.6	8	46	2	11.7
+U324	33	Male	Professional	Android	7.8	1.5	5	5.2	7	29	0	8.2
+U325	55	Male	Student	Android	9.7	1	2	8.5	10	14	4	5.7
+U326	56	Female	Business Owner	iOS	9	5.2	7	7.2	8	60	0	10.2
+U327	20	Female	Freelancer	iOS	4.9	7.9	3	4.3	10	21	5	4.1
+U328	57	Other	Professional	Android	6.2	3.5	6	7.7	5	31	3	13.6
+U329	23	Male	Student	iOS	2.5	6.4	7	8.1	5	42	6	13.1
+U330	44	Other	Business Owner	iOS	11.5	7.2	6	8.4	6	22	2	12.1
+U331	60	Female	Business Owner	Android	1.1	4.4	3	9	7	46	5	12.2
+U332	55	Other	Freelancer	iOS	4.4	3.4	3	6.9	7	48	6	9.7
+U333	54	Male	Business Owner	iOS	5	0.9	4	4.4	1	37	3	6.3
+U334	51	Female	Student	Android	6.9	3.9	6	7.8	9	55	4	2.8
+U335	38	Female	Professional	Android	1.5	2.4	8	7.3	1	45	1	10.2
+U336	34	Male	Freelancer	iOS	7.6	1.9	5	7.5	7	54	5	12.6
+U337	31	Female	Business Owner	iOS	7.1	1.5	5	6.6	1	13	0	12.9
+U338	60	Male	Professional	Android	9.4	1.7	1	7.3	3	57	0	9.9
+U339	38	Female	Business Owner	Android	6.3	1.7	7	5.3	2	50	4	8.3
+U340	33	Other	Student	iOS	4.3	6.8	4	4.2	7	35	6	6.6
+U341	34	Male	Student	Android	11.3	3.4	3	8	10	56	0	4.6
+U342	43	Male	Business Owner	iOS	2.6	6.5	7	6.8	1	47	0	2.6
+U343	26	Other	Student	iOS	11.1	5.4	7	8.4	4	39	2	13.5
+U344	60	Female	Business Owner	Android	10.5	2	2	7.9	3	49	5	7.2
+U345	59	Female	Professional	iOS	6.4	6.5	1	6.1	9	58	3	7.5
+U346	37	Male	Business Owner	iOS	2.4	6.4	6	6.4	8	54	6	7.2
+U347	47	Other	Professional	Android	10.9	6.8	4	8.7	8	52	1	4.9
+U348	38	Female	Professional	Android	6.4	7.4	9	7.6	10	15	3	9.3
+U349	22	Male	Freelancer	Android	5.3	7.5	8	4.2	9	26	1	2
+U350	18	Male	Freelancer	iOS	1.7	5.9	3	4.8	6	15	0	10.8
+U351	47	Other	Business Owner	iOS	5.4	4.6	5	4.3	4	27	2	6.3
+U352	57	Female	Business Owner	iOS	5.2	1.5	10	5.3	2	32	3	4
+U353	54	Female	Business Owner	iOS	3.7	7.8	3	5.5	8	39	2	13.8
+U354	24	Male	Freelancer	iOS	11.5	6.2	2	4.8	8	6	4	10.3
+U355	22	Female	Freelancer	iOS	5.6	3.1	9	7.9	7	47	4	5.6
+U356	52	Female	Student	Android	4.3	3.9	9	8.9	4	6	5	9
+U357	31	Male	Freelancer	Android	3.3	3.6	6	4.8	8	57	2	2
+U358	50	Male	Professional	Android	5.1	3.1	8	5.7	1	50	2	11.6
+U359	34	Female	Professional	Android	5.2	5.1	6	6.7	4	42	5	3
+U360	26	Other	Business Owner	iOS	10.8	4.1	9	5.6	5	55	2	12.7
+U361	40	Male	Student	Android	3.8	3.1	6	5.1	5	23	3	6.6
+U362	22	Male	Professional	Android	5.4	3.3	7	4.1	8	36	6	7
+U363	33	Female	Business Owner	Android	10.2	6.2	8	5.4	6	42	4	12.8
+U364	41	Female	Professional	iOS	5	4.8	2	5.1	9	53	2	9.8
+U365	36	Other	Business Owner	Android	5.3	3.1	7	6.8	6	25	5	7.3
+U366	28	Other	Student	Android	10.9	3.3	2	6.1	5	44	1	3.9
+U367	46	Other	Business Owner	iOS	4.3	2.6	8	5.4	1	8	1	11.1
+U368	52	Male	Freelancer	Android	6.8	6.2	1	6.4	8	29	6	2.3
+U369	37	Male	Business Owner	iOS	11.5	5	8	4.3	7	36	5	11
+U370	57	Female	Business Owner	Android	3.2	2.6	5	6.3	9	15	0	11
+U371	59	Male	Professional	Android	5.4	5.7	9	6	1	54	2	13.3
+U372	51	Other	Business Owner	Android	5.1	1.1	9	5.9	2	40	4	9.1
+U373	18	Other	Business Owner	Android	1.3	5.5	1	7.4	4	31	3	5
+U374	60	Other	Professional	iOS	10.9	2.6	4	5.4	6	51	4	5
+U375	53	Male	Professional	iOS	3.7	3.8	6	5.4	3	56	0	12.9
+U376	37	Female	Freelancer	iOS	9.8	5.9	5	7.2	9	45	5	9.9
+U377	60	Other	Student	iOS	2.3	5.1	2	4.4	5	13	1	12.5
+U378	24	Male	Business Owner	Android	3.2	6.3	10	4.8	6	43	2	11
+U379	26	Male	Business Owner	iOS	5.6	7.6	1	5.4	6	31	2	11.6
+U380	34	Female	Student	Android	1.4	1	8	7.4	7	9	2	3
+U381	25	Male	Freelancer	Android	5.2	3.6	1	7.9	5	52	5	10.8
+U382	24	Female	Professional	Android	2.7	2.9	7	5.4	3	45	2	8.3
+U383	53	Male	Business Owner	iOS	6.5	6.8	2	7.3	6	48	6	8.4
+U384	27	Male	Professional	iOS	4.9	2.5	3	5.6	2	53	1	8.8
+U385	35	Male	Freelancer	iOS	2.5	6.4	6	7.3	8	53	1	6.7
+U386	36	Other	Business Owner	iOS	5.1	7.5	3	6	6	37	6	13.8
+U387	56	Female	Business Owner	Android	4.1	4.9	2	6.8	4	60	5	12.7
+U388	31	Male	Professional	iOS	2.6	3.7	6	6.1	10	13	4	3.6
+U389	39	Male	Freelancer	iOS	1.3	1.5	6	7.4	8	31	4	3.5
+U390	31	Female	Student	Android	3.4	5.9	5	5.4	4	43	5	2.9
+U391	58	Female	Freelancer	Android	1.7	6.1	9	5.7	1	25	0	8.1
+U392	34	Other	Freelancer	Android	12	0.7	5	8.2	9	39	2	11.5
+U393	50	Other	Student	iOS	3.9	4.6	6	5.7	3	44	3	8.3
+U394	49	Female	Freelancer	iOS	2.9	6.7	2	8.2	8	11	2	4.3
+U395	34	Other	Business Owner	iOS	2	5.8	4	8	8	8	2	7.6
+U396	21	Male	Student	iOS	7.9	6.8	3	5.8	6	59	2	6.7
+U397	23	Female	Business Owner	iOS	3.8	3	9	7.7	10	54	3	11.7
+U398	58	Male	Business Owner	iOS	1.4	1.9	4	5.3	8	25	2	6.6
+U399	45	Other	Professional	iOS	5.7	6	9	6.1	3	53	2	5.5
+U400	35	Other	Business Owner	Android	11.1	4.8	10	5.7	8	52	4	4.9
+U401	20	Other	Business Owner	Android	11.3	7.7	8	7.5	8	50	0	11.7
+U402	18	Male	Business Owner	Android	2.2	3.9	7	4.1	10	42	6	9.7
+U403	39	Male	Professional	iOS	3.6	7.4	1	7.6	3	59	2	7
+U404	26	Other	Professional	Android	7.2	0.6	5	7	7	16	0	7.8
+U405	58	Other	Freelancer	iOS	8.6	6.9	9	7.1	4	58	5	9.9
+U406	34	Female	Business Owner	iOS	3.1	4.9	3	7.9	2	19	5	6.4
+U407	28	Other	Business Owner	Android	5.3	5.7	8	5.6	5	18	2	2.8
+U408	46	Female	Freelancer	iOS	5.6	7.5	6	5.1	3	13	4	11
+U409	53	Male	Freelancer	Android	1.6	0.9	10	6.9	7	30	0	7.6
+U410	45	Female	Freelancer	iOS	4.4	7.8	6	5.3	5	33	1	3.6
+U411	53	Other	Student	iOS	3	1.6	1	7.1	9	8	6	5.3
+U412	18	Female	Freelancer	iOS	10.2	2.6	6	5.9	10	22	0	7.4
+U413	25	Female	Business Owner	Android	4.5	2.8	7	5.5	3	32	2	6.9
+U414	22	Female	Freelancer	Android	9.5	1.6	5	5	7	36	2	3.9
+U415	27	Male	Professional	Android	1.7	1.8	6	8	10	26	5	9.6
+U416	52	Other	Student	iOS	2.6	6.6	8	6.6	6	51	5	4.3
+U417	20	Male	Freelancer	iOS	1.3	4.9	9	8.4	6	58	3	10.1
+U418	41	Female	Professional	Android	10.7	2.3	3	7.8	8	60	1	11.1
+U419	55	Other	Student	iOS	1.6	7.6	6	4.7	2	6	4	5.9
+U420	53	Male	Freelancer	iOS	5.6	3.6	10	7.7	2	19	0	7.9
+U421	27	Female	Professional	iOS	4.8	2.4	7	6.3	10	25	0	9.4
+U422	45	Other	Professional	iOS	11.9	6.9	6	6.9	9	8	0	12.9
+U423	26	Other	Student	iOS	3.3	7.9	10	7.1	4	10	1	13.6
+U424	20	Male	Professional	Android	10	7.3	5	6.9	7	30	4	6.3
+U425	37	Male	Student	Android	9	0.9	5	5	6	32	4	11.8
+U426	41	Female	Freelancer	Android	6.2	5.2	7	4.6	9	55	6	5.8
+U427	20	Male	Professional	iOS	2.5	5.6	5	6.5	6	31	2	12.5
+U428	40	Female	Student	iOS	10.7	3.8	9	8.3	7	30	3	5.8
+U429	31	Male	Freelancer	iOS	8.6	0.6	5	7.5	7	40	1	7.5
+U430	33	Female	Business Owner	iOS	7	1.5	2	8.4	2	54	5	2.5
+U431	60	Male	Freelancer	Android	9.9	7.9	10	6.7	8	6	2	8.3
+U432	24	Male	Freelancer	Android	6.1	1.4	6	5.2	8	6	5	11.4
+U433	40	Other	Professional	iOS	5.2	7.2	8	8.5	7	41	5	10.1
+U434	53	Other	Professional	Android	4	6.4	10	6.6	3	42	1	9.6
+U435	44	Female	Student	iOS	5.9	3.7	4	4.6	2	48	0	2.3
+U436	57	Male	Business Owner	Android	4.9	3.5	7	4	6	18	3	5.5
+U437	27	Female	Business Owner	iOS	7.7	6.3	4	8.1	3	14	1	11.5
+U438	33	Male	Student	iOS	7	2.1	2	4.1	7	41	4	12.9
+U439	28	Other	Student	iOS	6.7	3.6	10	8.3	5	19	3	12.8
+U440	29	Male	Business Owner	iOS	1.6	6.6	2	5.6	2	40	0	4.5
+U441	44	Male	Freelancer	iOS	2.2	5.2	1	5.9	9	49	0	5.8
+U442	19	Other	Professional	Android	4.8	7.6	3	5.4	5	34	6	8.1
+U443	29	Male	Freelancer	Android	4.2	6.8	2	5.6	10	45	5	11.2
+U444	39	Other	Student	Android	7.3	7.4	4	4.1	10	25	6	4.8
+U445	44	Male	Business Owner	iOS	6	7.1	4	7.2	8	33	1	8.8
+U446	60	Male	Business Owner	iOS	11.8	1.3	8	6.8	8	42	0	9.5
+U447	33	Male	Freelancer	Android	11.3	6.8	2	7.1	2	7	5	4.1
+U448	35	Female	Business Owner	iOS	3.7	7	7	4.2	9	54	1	4
+U449	28	Other	Business Owner	iOS	8.7	5.7	9	5.4	8	15	4	2.4
+U450	24	Other	Business Owner	Android	9.9	5.4	1	6.6	3	16	5	13.1
+U451	42	Female	Student	Android	4.9	4.5	8	5	4	36	4	4.7
+U452	20	Male	Business Owner	iOS	3.4	4.9	10	7	9	25	1	6.7
+U453	48	Female	Freelancer	Android	9.9	7.6	3	5.4	6	9	2	13.9
+U454	32	Male	Professional	Android	4.3	5.5	8	4.5	4	9	5	10.3
+U455	30	Female	Freelancer	iOS	7.9	3.8	2	6.8	4	34	4	13.9
+U456	47	Male	Student	iOS	5.2	2.2	6	6.7	7	37	3	13.6
+U457	40	Other	Business Owner	Android	6.4	0.8	2	4.1	9	32	3	10
+U458	37	Male	Freelancer	iOS	6.8	5.4	6	8.9	6	43	1	6.7
+U459	32	Other	Business Owner	Android	8	5.5	1	4.4	5	14	4	2.2
+U460	32	Female	Student	iOS	1.7	0.7	10	5.6	10	19	3	3.1
+U461	19	Female	Professional	Android	10.8	6	5	4	5	7	5	3.6
+U462	60	Female	Professional	Android	11.2	4.8	4	4.3	6	57	0	13.2
+U463	30	Other	Freelancer	Android	8.4	5.8	9	5.1	7	55	4	7.8
+U464	43	Female	Business Owner	iOS	6.2	5	9	5.9	3	7	0	11.7
+U465	39	Other	Freelancer	iOS	1.6	7.6	6	4.9	3	27	0	6.8
+U466	35	Female	Freelancer	iOS	9.1	3.2	6	4.4	9	16	6	2.1
+U467	22	Other	Student	Android	1.9	1.3	4	5.1	4	9	0	7.4
+U468	35	Other	Student	Android	11	2.7	9	5.3	10	5	6	4.4
+U469	40	Other	Freelancer	iOS	4.4	6.9	5	6.7	4	36	2	11.6
+U470	59	Other	Freelancer	Android	4.6	5.7	1	6.4	4	53	5	2.8
+U471	50	Other	Student	iOS	6.1	1.4	9	7	7	59	1	3
+U472	43	Other	Freelancer	iOS	2.5	0.6	5	8.5	3	47	6	3
+U473	52	Male	Student	Android	1.5	5.7	8	6.3	9	7	5	5.9
+U474	39	Male	Student	Android	4.4	6.8	5	4.1	1	49	0	13
+U475	19	Male	Business Owner	Android	5.2	2.3	1	8.4	6	9	3	3.3
+U476	25	Male	Student	iOS	11.6	3.6	5	4.1	7	39	3	12.7
+U477	34	Female	Professional	Android	6.1	0.9	10	5.2	10	18	1	5.1
+U478	29	Male	Student	iOS	1.5	4.6	4	7.2	4	21	0	8.5
+U479	55	Other	Business Owner	iOS	10.7	6.3	4	8.2	4	21	3	6.1
+U480	34	Male	Freelancer	iOS	5.8	1.5	7	8.9	2	31	3	8.6
+U481	20	Female	Professional	Android	11.6	5.7	1	5.3	8	40	4	8.3
+U482	24	Male	Business Owner	Android	7.7	6.5	5	7.4	7	40	4	6.3
+U483	56	Male	Professional	iOS	1.2	5.1	5	5.4	9	43	6	3.7
+U484	45	Other	Freelancer	Android	3.3	1.3	3	5.6	7	57	5	8.6
+U485	40	Male	Business Owner	Android	6.4	8	6	4.2	1	34	5	7
+U486	38	Male	Student	iOS	1.7	4.6	1	4.5	3	60	4	4.6
+U487	45	Male	Freelancer	Android	5.8	1.7	4	8.1	8	27	0	7.2
+U488	56	Other	Business Owner	Android	8.4	2.5	10	7.3	7	51	6	12.5
+U489	50	Female	Freelancer	iOS	6.4	5.3	6	8.3	1	29	0	13.1
+U490	25	Other	Business Owner	Android	2.1	6.3	10	8.6	5	9	0	2.2
+U491	42	Other	Professional	Android	10.4	5.4	9	4.2	4	53	3	6.6
+U492	54	Male	Freelancer	iOS	6.1	6.2	8	5.9	2	8	3	4.9
+U493	30	Female	Student	Android	11.9	7.9	2	7.4	8	47	5	11.8
+U494	34	Female	Freelancer	Android	11.7	4.2	6	5.4	3	44	0	9.5
+U495	20	Male	Business Owner	iOS	4.4	0.6	9	6.3	2	9	1	5.4
+U496	45	Male	Professional	iOS	11.9	6.2	7	5.3	1	14	1	13.9
+U497	18	Female	Freelancer	Android	10.5	4.8	8	4	4	37	5	7.5
+U498	51	Other	Student	iOS	5.6	7.1	9	4.1	8	37	5	10.3
+U499	52	Other	Professional	Android	3.6	7.3	7	9	7	8	6	3.4
+U500	60	Other	Business Owner	iOS	4.1	4.7	7	4.1	3	28	1	13.8
+U501	30	Male	Student	Android	3	4.9	8	5.4	1	49	1	10
+U502	41	Other	Business Owner	iOS	6	4.5	4	7.6	2	21	5	12.1
+U503	45	Other	Business Owner	Android	10.2	2.7	5	6.8	2	19	4	3.2
+U504	22	Female	Student	iOS	3.5	4.3	2	4.6	1	53	2	13.3
+U505	60	Female	Professional	Android	3.2	4.6	5	5.6	3	25	0	10.9
+U506	39	Female	Professional	iOS	6.3	3.5	8	4.6	6	30	4	11
+U507	57	Female	Student	Android	4.6	7	2	4.8	6	30	2	5.1
+U508	38	Male	Student	iOS	3.6	5.8	3	6.5	1	24	1	2.8
+U509	60	Other	Freelancer	iOS	3	4.3	1	5.5	2	55	6	2.3
+U510	25	Male	Student	iOS	2.1	4.1	8	5.4	2	23	0	6.6
+U511	37	Other	Student	iOS	7.5	3.1	8	8.1	6	20	0	5.6
+U512	50	Other	Professional	iOS	9.9	3.2	6	6.9	8	54	6	3.1
+U513	37	Female	Business Owner	Android	4.2	2.8	1	4.6	6	20	6	8.4
+U514	60	Female	Student	iOS	4	7.6	1	8.2	3	20	0	8.6
+U515	44	Female	Business Owner	iOS	6.1	6.9	10	7	2	16	0	2.6
+U516	38	Other	Student	iOS	9.9	4.3	10	5	5	43	4	2.2
+U517	43	Female	Business Owner	iOS	10.9	5	8	6.8	2	24	3	8.3
+U518	36	Female	Professional	iOS	1.9	7.7	4	6.2	10	24	3	12.5
+U519	53	Other	Student	iOS	4.9	3.4	9	7.7	10	19	4	9
+U520	26	Male	Business Owner	Android	10.4	1.9	10	5.3	6	55	4	13.6
+U521	30	Male	Business Owner	Android	10.7	6.2	7	7.8	4	12	3	4.4
+U522	44	Female	Business Owner	Android	10.9	2.6	6	5.4	8	25	3	9
+U523	60	Other	Freelancer	Android	10.4	5.1	6	4.6	8	50	5	9.9
+U524	42	Other	Business Owner	iOS	9.7	1.4	2	8.8	4	48	0	4.7
+U525	29	Male	Business Owner	iOS	9.4	3.3	3	6.1	8	50	6	5.6
+U526	57	Other	Student	iOS	7.7	5.1	4	6.6	6	47	0	4.2
+U527	54	Female	Freelancer	iOS	8.8	7.2	5	7	6	48	4	10.4
+U528	37	Female	Business Owner	iOS	7.9	3.1	9	8.5	9	28	6	6.4
+U529	43	Male	Freelancer	iOS	7.5	1.6	4	4.8	3	52	0	13.4
+U530	53	Female	Professional	iOS	4.6	5.9	6	8.3	10	43	3	12.2
+U531	18	Female	Student	Android	3.5	6.3	3	6.3	5	58	4	2.4
+U532	37	Other	Freelancer	Android	3.8	3.1	8	8.6	3	59	3	13.2
+U533	36	Other	Student	Android	11.8	5.9	10	6	3	41	6	2.2
+U534	31	Male	Student	Android	10.1	5.1	8	6.7	9	10	4	12.7
+U535	45	Female	Student	iOS	3.1	1.5	3	7.3	4	45	1	11.2
+U536	55	Female	Student	iOS	1.8	4.3	8	6.5	1	38	6	5.2
+U537	56	Female	Student	iOS	9.2	3	3	8.7	5	7	3	10.9
+U538	59	Other	Student	Android	1.7	3	2	7	6	34	6	12
+U539	38	Other	Professional	Android	11.4	4.6	1	4.1	1	31	3	13.2
+U540	47	Female	Business Owner	iOS	4	6.8	2	4.3	7	17	0	6.8
+U541	46	Other	Student	Android	1.5	3.6	2	7.6	5	17	0	13.2
+U542	46	Male	Business Owner	Android	2.3	3.7	5	4.1	5	8	3	14
+U543	31	Female	Professional	Android	5	4	2	4.4	7	39	2	7.9
+U544	50	Female	Student	Android	5.1	4.4	5	4.9	10	58	6	5.9
+U545	48	Other	Student	iOS	9.8	2.9	3	6.5	3	22	4	7.3
+U546	28	Male	Student	iOS	10.1	7.4	5	8.8	8	8	3	4.6
+U547	60	Other	Student	iOS	9.3	3.1	4	6.9	4	31	5	8
+U548	23	Female	Business Owner	Android	11.3	6.7	1	7	9	33	4	12.4
+U549	36	Female	Business Owner	Android	4.9	6.7	7	8.5	10	49	2	6.4
+U550	50	Male	Student	Android	4.8	1.2	4	4.2	1	23	6	4.7
+U551	60	Male	Student	iOS	11	6.4	7	4.1	3	9	0	12.7
+U552	58	Other	Student	Android	2.1	1.5	4	5.3	9	35	0	6.9
+U553	57	Female	Freelancer	iOS	5.3	4.3	1	7.4	7	6	5	9.3
+U554	39	Other	Professional	iOS	2.4	5.4	8	8.7	3	25	2	2.3
+U555	23	Female	Professional	Android	2	7.9	3	8.2	6	60	5	4.6
+U556	33	Male	Professional	Android	10.3	7.7	8	8.1	5	13	5	4.9
+U557	37	Other	Business Owner	iOS	3.9	1.8	7	8.9	3	45	3	4.6
+U558	32	Other	Business Owner	iOS	8.3	4.3	10	6.6	8	57	5	2.5
+U559	30	Male	Professional	Android	6.3	4.6	5	6.5	3	11	0	4.4
+U560	27	Other	Freelancer	Android	2.5	0.5	5	5.5	4	31	4	12
+U561	19	Male	Freelancer	Android	7.8	5.9	1	5.5	6	35	4	12.9
+U562	20	Male	Business Owner	iOS	6.8	4.3	4	6.5	9	23	1	5.6
+U563	33	Female	Freelancer	Android	10.7	5.1	8	7	7	22	5	12.4
+U564	48	Male	Freelancer	iOS	6	5.8	1	4.9	3	55	3	13.6
+U565	57	Male	Student	iOS	3.8	3.5	3	8.9	10	31	6	5.3
+U566	22	Other	Freelancer	Android	10.5	4.8	6	5.9	9	59	0	5.1
+U567	47	Male	Student	iOS	6.4	4.2	6	4.8	3	31	1	12.5
+U568	44	Male	Business Owner	iOS	11	0.9	9	4.2	3	13	0	7.2
+U569	58	Female	Freelancer	iOS	11.3	2.8	4	7.9	6	43	6	3.3
+U570	54	Other	Professional	Android	1.7	4.6	1	7.9	6	7	0	8.2
+U571	30	Other	Freelancer	Android	4	5.6	10	6.5	3	37	6	7.7
+U572	42	Other	Professional	Android	4.7	7.5	4	4.8	5	34	0	9.6
+U573	49	Male	Professional	Android	10.5	2.2	10	6.4	7	7	5	8
+U574	43	Female	Student	iOS	8.6	7.4	3	6.9	1	56	3	4.2
+U575	33	Male	Professional	Android	9.3	7.7	9	7.2	9	58	4	3
+U576	27	Male	Student	Android	3.6	7.9	6	8.4	6	8	5	3.9
+U577	59	Male	Professional	Android	10.5	0.5	5	4.2	9	48	6	8.3
+U578	18	Male	Freelancer	Android	6.2	7.3	7	8.3	3	28	3	8.2
+U579	24	Female	Professional	iOS	4	1.2	4	8	6	36	5	2.9
+U580	45	Other	Student	iOS	6.7	7.2	2	7.3	10	49	6	7.5
+U581	32	Female	Business Owner	iOS	2.3	6.3	3	6.1	4	13	5	6.3
+U582	29	Other	Business Owner	Android	11.5	3.4	7	6.2	7	44	2	8.8
+U583	51	Female	Freelancer	Android	2.7	2.2	6	7	1	48	6	7.9
+U584	47	Female	Professional	Android	2.4	0.6	4	8.4	4	32	3	6.6
+U585	21	Male	Freelancer	Android	11.6	7.9	2	8.5	5	29	2	13.5
+U586	53	Male	Professional	iOS	9.2	0.5	3	5.9	2	14	6	10.7
+U587	33	Male	Professional	Android	2.1	3.6	1	8.5	3	49	3	13.9
+U588	25	Male	Freelancer	iOS	5.5	6.9	2	4.8	3	40	1	7.5
+U589	47	Female	Business Owner	iOS	2.4	5.6	10	4.4	8	56	6	4.7
+U590	26	Female	Student	iOS	7	4.3	9	8	1	10	1	9.8
+U591	47	Male	Professional	iOS	8.2	0.8	2	5.2	3	43	2	3
+U592	60	Male	Business Owner	iOS	6.1	7	8	8.3	6	44	6	9.6
+U593	51	Other	Student	iOS	8.2	6.9	4	7.1	8	46	4	11.3
+U594	53	Other	Student	iOS	7.9	7	6	7.6	3	38	0	12.9
+U595	56	Male	Freelancer	iOS	10.6	5.7	5	6	1	24	2	5.6
+U596	38	Male	Business Owner	iOS	3.1	1.6	5	4.8	10	8	6	9.2
+U597	46	Female	Business Owner	Android	6.4	6.2	3	6	6	8	4	9.6
+U598	57	Male	Freelancer	iOS	4.5	7.8	2	6.1	8	56	6	9
+U599	50	Male	Freelancer	Android	7.6	2.2	10	7.7	10	25	2	4.7
+U600	45	Female	Student	Android	8.9	2.7	9	7.9	6	51	1	7.8
+U601	53	Male	Business Owner	iOS	5	7.2	5	5.7	9	56	1	2.2
+U602	46	Male	Business Owner	iOS	10	2.7	3	7.8	5	55	2	8.4
+U603	28	Female	Professional	Android	4.6	0.6	6	7.2	10	21	0	8.2
+U604	48	Male	Student	iOS	10.6	2.1	6	4.9	1	55	5	13.6
+U605	46	Other	Freelancer	iOS	6.6	4.5	6	4.2	1	36	3	10.8
+U606	34	Other	Freelancer	Android	3.5	2.7	6	5.5	8	14	0	13.6
+U607	33	Male	Freelancer	iOS	3.7	4.3	10	5	7	56	2	9.8
+U608	58	Male	Freelancer	iOS	8.7	1	7	4.5	4	37	4	5.6
+U609	35	Female	Business Owner	iOS	10.8	4.8	6	4.6	6	10	5	12.2
+U610	51	Other	Student	iOS	8.9	3.2	10	7.3	5	15	5	2.6
+U611	49	Female	Business Owner	Android	4.9	3.7	2	5.5	7	10	3	2.4
+U612	58	Male	Professional	iOS	11	3.6	7	8.6	5	46	1	8.4
+U613	33	Female	Business Owner	iOS	3.4	4.7	5	5.7	3	57	3	10.8
+U614	35	Female	Student	iOS	3.9	5.6	7	8.9	2	14	6	2.5
+U615	46	Male	Business Owner	Android	1.7	5.5	2	6.1	1	40	0	13.9
+U616	22	Male	Freelancer	Android	7.4	3.6	2	8.8	1	37	2	3.8
+U617	36	Male	Business Owner	Android	11.7	5.8	9	8.4	6	11	6	13.2
+U618	33	Female	Professional	Android	8.5	3.2	7	6	3	8	1	12.3
+U619	35	Male	Business Owner	iOS	4.9	3.5	5	7.9	6	41	6	5.9
+U620	39	Female	Student	Android	10.5	5.7	7	5.7	7	42	0	6.6
+U621	38	Male	Freelancer	Android	10	3.6	2	4.5	8	20	3	9
+U622	52	Other	Student	Android	1.4	1	6	7.3	8	60	2	12.6
+U623	23	Male	Freelancer	iOS	8	1.4	6	7.2	9	41	5	12.3
+U624	26	Male	Freelancer	iOS	7.2	3.7	5	8.3	4	38	3	2.8
+U625	27	Male	Student	Android	2.7	4.1	8	6.4	3	55	3	3.5
+U626	32	Male	Student	Android	7.6	7.1	4	5.7	3	60	0	5.6
+U627	42	Male	Freelancer	Android	5.6	7.8	7	6.6	10	47	1	8
+U628	27	Female	Freelancer	Android	1.4	4.4	10	7	9	33	6	8.5
+U629	31	Male	Business Owner	Android	6	5.5	6	6.4	5	46	2	5
+U630	22	Other	Student	Android	5.9	3.1	8	8.8	5	16	6	5.8
+U631	44	Female	Student	Android	11	3.6	10	9	4	11	2	8.9
+U632	44	Male	Freelancer	Android	4.6	2.6	4	7.5	6	56	6	4.3
+U633	39	Other	Student	iOS	1.3	2	7	4.4	9	35	3	13.9
+U634	52	Other	Student	iOS	9.2	2.1	4	6.8	4	54	1	4.4
+U635	47	Female	Business Owner	iOS	9.4	0.6	3	8.8	2	49	6	11.5
+U636	44	Female	Professional	Android	7.4	1.5	10	4.3	1	6	1	12.3
+U637	21	Female	Professional	iOS	9	4	7	4.1	4	54	0	7.2
+U638	31	Other	Business Owner	Android	8.9	4.4	1	7.4	7	46	0	11.3
+U639	44	Female	Freelancer	Android	4.4	5	3	7.2	4	22	6	9
+U640	42	Male	Student	Android	4.1	5.9	9	7.5	7	11	2	8
+U641	55	Female	Student	Android	6.3	2.8	3	4.3	8	13	1	9.9
+U642	19	Male	Professional	iOS	3.7	6.7	6	7.2	3	29	1	4.2
+U643	54	Other	Business Owner	Android	10.1	3.8	2	5	7	7	0	5.2
+U644	42	Other	Student	Android	7.2	3.4	8	6.6	1	37	0	9.2
+U645	48	Other	Professional	Android	11.6	6.8	10	8.7	1	46	1	2.6
+U646	18	Other	Student	Android	11.3	0.9	1	6.1	5	34	2	11.2
+U647	40	Female	Professional	Android	3.8	2	2	4.6	8	16	1	9.3
+U648	37	Male	Freelancer	iOS	7.8	1.2	9	4.8	1	34	3	2.1
+U649	42	Other	Freelancer	iOS	2.2	6.5	1	7	9	33	0	5.8
+U650	44	Male	Business Owner	iOS	5.9	1.6	8	7	2	52	3	4.6
+U651	52	Other	Student	iOS	7.7	5.9	4	6.8	1	58	0	9.2
+U652	52	Other	Student	Android	9.8	6.2	10	8.1	10	9	5	7.2
+U653	56	Male	Business Owner	iOS	3.2	7.2	2	8.2	4	53	1	4
+U654	32	Male	Student	Android	7.5	7.9	3	5.2	7	25	3	9.6
+U655	49	Female	Student	iOS	4.4	3.5	3	4.3	3	48	6	9.2
+U656	32	Female	Business Owner	Android	10.5	2.9	3	7.1	3	37	2	5
+U657	35	Female	Student	Android	2.6	4.9	8	6.9	3	39	4	9.1
+U658	45	Male	Freelancer	iOS	3.5	4.7	6	7.2	3	23	3	8.6
+U659	49	Other	Freelancer	iOS	11.2	1	7	6.1	9	38	2	10.4
+U660	19	Female	Professional	iOS	10.2	4.8	1	8.3	9	48	2	8.5
+U661	42	Male	Freelancer	iOS	8.4	7.1	4	4.6	5	42	1	13.4
+U662	39	Female	Professional	iOS	11.5	5	1	4.6	8	53	0	13.4
+U663	60	Male	Freelancer	iOS	11.9	3.4	2	4.2	3	6	6	2.2
+U664	43	Female	Professional	iOS	7.1	1.7	1	4.4	9	24	6	13.7
+U665	28	Other	Freelancer	Android	5.9	4.8	4	8.8	1	56	6	12.1
+U666	47	Female	Professional	iOS	4.3	4.3	4	7.8	10	7	5	10.7
+U667	26	Male	Business Owner	Android	2.7	5.5	7	7	6	28	5	4.3
+U668	57	Female	Student	iOS	9.7	5	5	7.9	5	54	5	12.9
+U669	52	Female	Freelancer	iOS	9.6	2.7	10	5.4	6	43	3	4.4
+U670	19	Male	Professional	iOS	1.4	0.5	9	4.5	4	14	4	8.8
+U671	43	Female	Student	Android	6.8	2.3	1	4.4	10	14	1	6.4
+U672	55	Male	Business Owner	Android	3.2	7.9	2	6.6	5	23	6	13.9
+U673	54	Female	Freelancer	Android	11.2	0.9	9	6	6	11	1	8.5
+U674	60	Male	Freelancer	Android	10.8	7.6	3	8.1	3	54	1	7.1
+U675	19	Male	Freelancer	iOS	6.5	3.1	7	8.6	6	45	5	3.7
+U676	23	Other	Freelancer	Android	1.6	7.7	5	6.3	5	53	6	7.4
+U677	59	Male	Student	Android	3.2	7.5	8	7.9	3	39	2	13.9
+U678	45	Male	Student	iOS	2.3	7.1	7	8.5	6	11	3	6.7
+U679	26	Other	Freelancer	iOS	4.2	1.4	9	4.6	7	24	4	8.8
+U680	47	Male	Professional	iOS	7.1	4	2	6.4	10	53	6	5.2
+U681	29	Other	Professional	Android	5	3.5	9	6	7	38	4	5.8
+U682	21	Female	Student	iOS	2.6	6.4	3	7.5	2	59	5	13.3
+U683	34	Female	Freelancer	Android	1.7	6.7	10	7.9	6	26	5	2.9
+U684	42	Male	Freelancer	iOS	11.6	4.6	1	8.4	4	56	2	10.3
+U685	38	Male	Business Owner	iOS	10	5.5	9	6.6	9	23	6	12.7
+U686	31	Female	Professional	Android	9	2.6	7	5	2	12	2	2.9
+U687	47	Female	Student	iOS	9.9	0.9	9	4.5	7	10	4	5.3
+U688	38	Female	Professional	Android	5.2	7.4	4	5.4	8	15	2	7.6
+U689	39	Other	Business Owner	iOS	2.3	7.2	5	7.7	2	44	5	12.8
+U690	42	Female	Business Owner	Android	11.4	0.6	1	8.6	9	42	3	5
+U691	35	Male	Professional	Android	1.7	4.9	3	9	5	36	1	10.6
+U692	44	Male	Freelancer	iOS	1.4	5.7	5	7.7	5	8	4	11.9
+U693	34	Female	Student	Android	3.6	2.9	4	7.3	7	11	3	5.2
+U694	23	Other	Professional	iOS	10.3	0.6	2	5.4	3	34	4	9.8
+U695	48	Male	Professional	iOS	7.6	1.5	1	7.7	2	39	6	2.1
+U696	19	Male	Freelancer	Android	10.1	4.1	3	7.1	9	7	6	4.2
+U697	52	Female	Professional	Android	1.5	5.4	6	8.9	7	43	4	6.1
+U698	21	Female	Freelancer	iOS	1.1	6	4	4	1	40	2	8
+U699	40	Female	Student	iOS	7.3	0.9	4	6.7	10	52	5	8.5
+U700	32	Female	Student	Android	5.8	3	3	5.6	6	47	6	10.6
+U701	59	Female	Professional	Android	8.3	3.7	4	6.5	10	40	1	7.6
+U702	22	Male	Business Owner	Android	7.5	6.6	4	4.7	6	54	2	7.7
+U703	59	Other	Professional	Android	2	4.7	9	8.8	3	46	3	2.8
+U704	20	Female	Business Owner	iOS	2	1.4	4	8.3	6	10	1	2.2
+U705	19	Other	Freelancer	iOS	12	2.4	3	7.2	3	26	1	13.1
+U706	33	Male	Professional	iOS	6.7	5.4	10	4.3	4	30	4	3.5
+U707	30	Female	Freelancer	Android	9.6	6.2	2	6.2	3	36	1	9.7
+U708	19	Female	Freelancer	iOS	4.2	0.5	8	6.5	10	29	0	9.4
+U709	57	Male	Freelancer	Android	2.6	2	10	5.1	7	31	4	13.3
+U710	27	Female	Business Owner	Android	9.6	7.1	1	5.4	1	24	1	7.1
+U711	33	Female	Student	iOS	3.4	6.8	7	5.1	2	35	6	7
+U712	26	Male	Business Owner	Android	4.3	3.4	4	6.2	7	30	4	6.5
+U713	48	Male	Freelancer	Android	9.9	2.6	8	4.7	8	26	4	8.1
+U714	60	Male	Freelancer	iOS	4	6.6	5	4.4	3	14	1	2.9
+U715	25	Other	Freelancer	iOS	7.4	6.5	2	4.8	10	34	1	3.3
+U716	54	Female	Freelancer	Android	6	1.5	8	7.2	8	30	3	10
+U717	31	Other	Professional	iOS	5.5	7.6	9	6.5	2	25	3	5.7
+U718	47	Other	Professional	Android	8.3	0.9	10	7.8	8	25	2	6.6
+U719	34	Other	Professional	Android	2.4	5	10	8.4	10	17	0	9.5
+U720	41	Female	Professional	iOS	11.1	4.9	3	4.5	10	51	2	8.8
+U721	28	Other	Freelancer	Android	1.5	4.6	8	6.1	6	21	1	13.1
+U722	56	Other	Student	Android	8.1	4.5	2	7.7	2	36	5	10.8
+U723	56	Female	Student	Android	5.2	0.9	9	8.1	8	22	6	12.1
+U724	25	Male	Business Owner	iOS	8.9	3.6	1	6.9	2	15	1	10.6
+U725	28	Female	Student	iOS	3	5.5	4	8.1	4	39	6	9.7
+U726	37	Male	Freelancer	Android	1.2	7.4	7	7.9	6	38	6	5
+U727	24	Female	Business Owner	iOS	6.3	7.2	4	7.1	1	46	4	13.4
+U728	55	Other	Freelancer	iOS	1.8	5.9	10	7	2	46	4	4.3
+U729	19	Female	Professional	Android	5.8	5.8	5	8.9	4	18	1	8.4
+U730	37	Other	Professional	Android	9.6	3.9	7	8.5	9	28	3	8.8
+U731	54	Other	Business Owner	iOS	4.8	2.1	8	4.4	9	24	1	9.7
+U732	42	Other	Business Owner	Android	8.1	4.4	5	5.5	6	58	5	10
+U733	43	Other	Professional	iOS	10.8	7	5	4.5	4	24	1	7.1
+U734	30	Other	Professional	Android	9.7	3.7	3	6.1	2	40	1	7.8
+U735	22	Other	Business Owner	Android	9.1	1.5	4	8.7	7	50	3	12
+U736	55	Male	Freelancer	iOS	2	1.1	10	4.6	2	29	4	9.2
+U737	58	Female	Business Owner	Android	4.4	3.7	6	4.4	5	56	6	2.5
+U738	33	Other	Business Owner	Android	11.1	4.4	5	5.7	7	31	0	12
+U739	24	Other	Student	Android	9.4	7.2	4	4.5	5	44	1	9.8
+U740	37	Male	Business Owner	Android	4.7	0.8	10	8	4	48	0	13.5
+U741	56	Male	Student	iOS	7	2.5	4	7	8	48	1	11.8
+U742	25	Female	Student	iOS	8.1	5.7	7	8.4	2	54	6	4.1
+U743	54	Male	Freelancer	Android	1.9	3.8	8	6.6	8	16	5	2
+U744	20	Female	Student	iOS	8.9	0.7	1	8.7	10	19	2	6.4
+U745	40	Male	Professional	Android	10	3.2	4	7.1	9	43	2	4.4
+U746	52	Male	Student	iOS	5.9	1.8	4	7.7	2	26	2	9.6
+U747	45	Male	Freelancer	Android	5	4.4	6	5.2	2	46	5	7.6
+U748	60	Female	Business Owner	Android	1.5	6.2	10	7.8	2	15	2	10.3
+U749	41	Male	Professional	Android	1.1	1.1	7	5.9	4	46	1	13.9
+U750	22	Other	Professional	Android	3.6	4.8	10	7.1	4	9	5	9
+U751	50	Female	Professional	iOS	2.2	2	3	4.8	9	35	5	9.6
+U752	59	Male	Business Owner	iOS	1.3	6.3	9	8.2	3	10	5	12.9
+U753	39	Male	Professional	iOS	11.4	7.6	7	8.3	10	14	4	2.8
+U754	18	Female	Freelancer	iOS	11.7	2.2	10	6.2	4	53	1	9
+U755	44	Other	Freelancer	Android	10.4	0.6	9	8.1	7	43	6	5.9
+U756	49	Other	Business Owner	Android	4	0.8	7	7.2	8	38	2	2.5
+U757	24	Female	Professional	Android	5.7	2.1	10	8.9	6	10	3	9.3
+U758	45	Female	Professional	iOS	11.4	5.2	9	4.1	10	27	1	9.1
+U759	41	Female	Business Owner	Android	5.2	5.5	10	6.9	8	31	1	11.4
+U760	58	Female	Professional	Android	9.3	2.6	8	5.5	3	26	5	11.3
+U761	47	Female	Business Owner	Android	8.9	1.3	10	6.7	9	15	0	2.8
+U762	27	Male	Professional	Android	11.8	2.4	4	4.7	2	51	5	10.8
+U763	45	Male	Freelancer	iOS	7.5	2.5	6	8.6	5	29	3	12.1
+U764	29	Other	Freelancer	iOS	8.1	6.2	6	4.6	4	36	3	13.1
+U765	51	Male	Student	Android	7.8	3.5	7	4.2	6	38	4	11.8
+U766	59	Female	Student	Android	11.8	3.7	4	6.7	1	51	4	8.6
+U767	35	Male	Freelancer	iOS	5.2	7.4	3	6.9	9	25	6	3.7
+U768	57	Other	Freelancer	Android	2.7	4.1	8	7.1	4	19	0	9.4
+U769	52	Female	Business Owner	iOS	2.8	2.6	7	7.4	8	17	3	2.3
+U770	48	Other	Freelancer	Android	11.3	2.1	1	5	3	13	3	7.2
+U771	47	Female	Business Owner	iOS	8.1	1	6	8	2	30	6	6.8
+U772	45	Male	Professional	Android	1.5	3.7	6	7.5	8	41	5	9.7
+U773	55	Other	Business Owner	iOS	3.7	1	9	4.2	3	52	2	5.4
+U774	35	Male	Student	iOS	7.6	0.5	2	6.5	2	54	3	13.7
+U775	38	Other	Freelancer	iOS	6.2	4.2	5	4.4	2	10	4	11.9
+U776	33	Female	Student	Android	5.6	7	6	6.1	5	35	3	2.5
+U777	23	Female	Business Owner	Android	6.1	1.5	6	7.8	4	20	4	13.9
+U778	35	Other	Freelancer	Android	2.6	5.6	4	4.8	9	33	3	5.3
+U779	46	Female	Freelancer	Android	7.6	4.3	8	6	1	38	6	2.2
+U780	33	Female	Student	Android	1.6	2.9	5	4.5	3	53	4	6.1
+U781	47	Female	Student	iOS	4.2	3.4	8	7.7	6	26	4	9.2
+U782	54	Other	Freelancer	Android	5.7	1.9	3	7.6	10	18	3	4.7
+U783	57	Male	Professional	iOS	5.6	1	5	7.7	7	26	0	10.2
+U784	60	Other	Freelancer	iOS	9.8	4.9	6	7.7	10	46	4	12.5
+U785	42	Female	Business Owner	Android	3	0.8	10	4.9	6	20	0	11.2
+U786	39	Female	Student	iOS	6.8	7.9	5	8.9	2	37	1	12.6
+U787	19	Other	Business Owner	Android	4	7.9	2	8.1	6	24	2	9.6
+U788	49	Male	Student	iOS	8.1	4	4	6.5	2	9	5	9.4
+U789	38	Male	Student	Android	5.6	7.6	9	6.8	8	27	2	11.3
+U790	29	Female	Student	iOS	7	3.8	1	8.8	2	19	4	10.2
+U791	49	Male	Student	Android	2	0.7	4	5.8	5	42	1	13.3
+U792	31	Male	Professional	iOS	11.6	7.5	7	5.9	6	20	4	9
+U793	40	Other	Student	Android	6.5	2.7	4	5.8	3	45	1	11.1
+U794	34	Male	Student	iOS	6	4.8	10	4.7	8	60	1	4.6
+U795	39	Female	Professional	Android	10.7	6.4	7	6.4	1	51	0	8.1
+U796	35	Female	Freelancer	Android	11.8	4.9	6	6.4	10	43	3	5.6
+U797	56	Male	Professional	Android	10.6	4.1	2	8.9	4	41	6	10
+U798	35	Female	Business Owner	iOS	1.5	5.6	10	7.9	3	51	6	6.7
+U799	53	Male	Freelancer	Android	6	5.6	9	5.8	4	30	4	11.7
+U800	18	Female	Student	Android	9.6	7.5	2	4.9	5	37	3	11
+U801	51	Male	Business Owner	Android	11	2.1	5	4.1	7	27	0	12.3
+U802	30	Male	Professional	iOS	8.1	7.6	10	6.6	8	55	1	4.4
+U803	23	Other	Business Owner	iOS	11.5	6.7	9	7.9	4	54	1	6
+U804	33	Male	Professional	Android	8.7	1	4	5.3	4	45	5	2.2
+U805	44	Male	Professional	Android	12	6.2	6	7.5	10	20	0	2.5
+U806	49	Male	Freelancer	iOS	4.1	0.8	9	4.9	10	36	5	11.3
+U807	53	Other	Freelancer	iOS	7.8	5.5	2	5	9	12	1	11.9
+U808	33	Male	Business Owner	iOS	6.3	1.9	1	7.3	4	33	2	2.4
+U809	48	Female	Professional	Android	8	2.9	2	4.1	3	30	6	6.2
+U810	59	Male	Business Owner	iOS	12	6.2	2	5.5	1	26	3	6.2
+U811	49	Other	Student	Android	1.5	5.1	1	4.4	5	41	1	5
+U812	46	Male	Student	iOS	1.6	2	5	6.2	10	22	3	11.5
+U813	19	Male	Professional	iOS	11.7	2.8	2	4.4	6	53	1	8.4
+U814	23	Other	Freelancer	iOS	3.2	0.5	2	8.1	5	55	5	12
+U815	36	Other	Freelancer	iOS	4.2	4	9	7.9	6	24	3	5.8
+U816	32	Other	Freelancer	Android	3.7	2.8	7	4.5	5	60	5	9.4
+U817	43	Other	Professional	iOS	1.9	3.6	4	8.4	7	13	1	11.8
+U818	33	Male	Student	Android	11.9	7.8	4	8.7	9	59	6	7.5
+U819	37	Female	Freelancer	Android	5.2	3.7	3	7.7	5	32	6	8.5
+U820	60	Male	Business Owner	iOS	6.9	7	5	4.1	7	22	1	8.1
+U821	55	Male	Student	iOS	3.8	5.4	9	4.8	9	5	3	13.4
+U822	41	Male	Business Owner	iOS	1.6	4.4	4	7.1	4	46	0	11.6
+U823	48	Female	Professional	Android	3.2	7.7	8	5.9	5	12	3	4.7
+U824	53	Female	Business Owner	Android	5.2	6.2	5	5.3	10	31	2	3.4
+U825	51	Other	Student	Android	11.6	5.2	2	5.3	8	55	0	7.7
+U826	40	Female	Student	iOS	5.9	1.1	2	7.2	6	27	6	13.1
+U827	45	Female	Student	iOS	7.1	6.1	3	7.2	7	58	4	3.9
+U828	53	Female	Professional	Android	8.1	1.9	6	4.4	3	23	3	4.1
+U829	39	Female	Business Owner	iOS	2.8	1.3	1	4.4	7	14	3	12.4
+U830	40	Male	Professional	iOS	9.4	7.8	3	9	4	11	3	5.8
+U831	47	Male	Student	Android	1.6	3.6	9	4.6	8	13	1	9.9
+U832	35	Male	Business Owner	Android	10.1	3	7	8.4	3	24	3	6.3
+U833	37	Other	Professional	Android	10.7	1.6	6	5.3	6	31	6	10.2
+U834	34	Male	Professional	Android	9.6	2.9	9	5.7	3	45	2	8.9
+U835	32	Other	Business Owner	iOS	3.8	6.3	8	4.9	4	6	5	5.4
+U836	25	Other	Student	Android	4.1	1.4	5	5.6	9	54	4	5.4
+U837	30	Other	Business Owner	iOS	7.3	1.7	2	8.8	5	16	5	9
+U838	38	Female	Business Owner	iOS	7	3.4	6	5.5	1	26	1	2.7
+U839	25	Female	Business Owner	Android	10.6	7.7	5	7.2	2	37	3	8.3
+U840	52	Male	Freelancer	iOS	10.4	5	5	7.2	9	54	0	3.8
+U841	29	Female	Freelancer	Android	7.7	5.3	3	7.1	8	34	6	10.4
+U842	30	Other	Business Owner	Android	5.9	2.5	9	5.3	3	42	5	13
+U843	31	Male	Freelancer	iOS	11.6	7.3	2	5.2	10	25	4	3
+U844	48	Other	Professional	iOS	10.2	2.7	6	4.5	6	14	5	6
+U845	35	Female	Student	iOS	9.5	4.6	9	6.2	5	42	4	9.4
+U846	55	Other	Business Owner	iOS	5.5	6.4	6	7.3	1	45	0	10
+U847	51	Male	Professional	Android	7.5	3.6	7	7.6	3	39	0	12
+U848	56	Female	Professional	iOS	3.4	2.3	2	6.2	7	39	0	12.9
+U849	36	Male	Professional	Android	5.5	3.8	5	8.1	4	15	2	4.7
+U850	24	Male	Professional	iOS	1.3	4.4	2	8.6	3	13	3	7.7
+U851	30	Female	Student	iOS	9	1.1	4	5.6	2	12	1	13.5
+U852	36	Female	Business Owner	iOS	2.1	1.8	4	5	8	21	6	3.9
+U853	32	Male	Professional	Android	2	4.2	4	6.1	4	55	2	12.5
+U854	41	Female	Freelancer	Android	10.3	4.2	6	6	9	60	5	7.4
+U855	29	Other	Student	iOS	10.4	6.9	3	6.3	6	20	2	12.8
+U856	37	Male	Business Owner	iOS	11.5	2.3	1	6.7	8	31	4	5
+U857	18	Female	Professional	iOS	10.9	3.1	1	8.8	8	39	3	9.6
+U858	52	Other	Business Owner	Android	1.2	5	10	6.3	8	30	5	5.7
+U859	26	Other	Freelancer	iOS	3.3	1.1	10	7.6	3	20	2	11.3
+U860	35	Male	Professional	iOS	8.3	4.7	4	7.5	4	31	3	2.4
+U861	20	Male	Freelancer	Android	11.1	2.4	2	7.6	1	60	4	6.4
+U862	21	Female	Freelancer	Android	11.1	6.2	2	6.5	4	18	3	5.2
+U863	53	Female	Business Owner	iOS	3	6.9	5	6.5	2	29	1	3.2
+U864	36	Female	Professional	Android	1.8	6.9	1	5.6	5	22	1	13.7
+U865	26	Female	Professional	Android	7.4	6.9	2	6.8	10	6	3	2.6
+U866	58	Other	Business Owner	iOS	4.6	4.7	7	6.9	3	26	5	5
+U867	49	Female	Freelancer	iOS	9.2	7.1	1	5.3	4	11	4	5.4
+U868	24	Female	Professional	iOS	9.3	2.7	5	5.4	6	15	2	8.3
+U869	18	Male	Freelancer	Android	8.3	6.4	4	6.7	4	9	6	7.5
+U870	54	Female	Professional	Android	10	0.7	10	8.1	5	23	6	2
+U871	36	Other	Student	iOS	10.2	7.1	4	4	8	24	0	2.6
+U872	48	Male	Freelancer	iOS	8.4	6	9	7.6	4	59	3	4.3
+U873	48	Male	Student	Android	6.7	1.1	10	5.2	2	14	3	5.3
+U874	46	Male	Professional	Android	6.4	7.3	7	8.4	10	48	0	2.7
+U875	39	Male	Freelancer	Android	10.7	1.7	10	8.4	8	60	5	3.8
+U876	29	Other	Student	Android	9.3	7.9	3	6.5	6	38	3	5.7
+U877	21	Female	Student	iOS	8.9	3.6	8	7.6	8	36	6	13.3
+U878	34	Female	Freelancer	Android	10.8	4	8	5.2	8	26	1	7.9
+U879	48	Male	Student	Android	5.5	2.9	9	4.3	6	13	3	10.9
+U880	25	Other	Professional	Android	8.1	6.2	3	5.1	2	19	1	4.4
+U881	22	Male	Freelancer	iOS	1.5	6.9	9	7.4	8	35	5	5.2
+U882	43	Male	Freelancer	iOS	4.9	0.5	2	9	3	30	0	5.6
+U883	49	Female	Student	Android	1.8	5.5	4	6.3	7	37	0	4.7
+U884	22	Other	Professional	iOS	4.7	3.6	9	8.5	9	60	4	7.6
+U885	54	Female	Business Owner	Android	3.2	1.1	7	8.1	3	10	2	6.2
+U886	58	Female	Professional	iOS	6.3	5.6	4	4.5	2	30	6	8
+U887	21	Male	Freelancer	Android	4.3	7.9	7	4.1	6	46	0	7.7
+U888	27	Male	Student	iOS	9	3.1	6	7.6	4	14	2	2.6
+U889	27	Other	Professional	Android	2.4	7.6	8	6.1	7	48	0	9
+U890	54	Other	Business Owner	Android	9.5	5.5	1	4.7	7	25	3	13.6
+U891	37	Female	Professional	iOS	6.1	3.6	3	5	7	41	6	3.7
+U892	23	Male	Freelancer	Android	7.5	4.3	6	7.2	1	23	2	13.6
+U893	33	Other	Professional	iOS	5	4	3	4.3	2	49	2	5.9
+U894	25	Other	Business Owner	iOS	1.3	1.1	2	8	1	12	4	3.8
+U895	53	Female	Student	Android	9.2	5.8	4	4.6	6	48	5	5.2
+U896	44	Other	Business Owner	Android	9.3	1.2	5	7.6	4	22	3	6.8
+U897	56	Male	Freelancer	iOS	10	2.7	2	4.3	6	51	6	3
+U898	56	Male	Student	iOS	9.8	7.3	7	8.1	9	24	3	13.9
+U899	57	Female	Freelancer	iOS	6.4	3.4	6	7.1	3	9	4	11.2
+U900	32	Other	Freelancer	iOS	12	1	4	8.4	2	43	4	12.4
+U901	51	Female	Student	Android	4	0.9	10	7.8	3	44	6	7.4
+U902	42	Female	Professional	Android	8.9	2	6	4.3	6	26	4	3.6
+U903	46	Female	Professional	iOS	2.6	8	3	4.8	4	48	5	3.1
+U904	46	Male	Business Owner	Android	11.6	2.8	1	6.6	2	59	2	2.7
+U905	37	Male	Student	Android	4.7	0.9	10	7.2	5	50	0	2.1
+U906	55	Female	Student	iOS	11	1.9	5	5.2	1	46	4	8.7
+U907	45	Female	Professional	Android	4.3	7.6	6	4.3	5	37	6	13
+U908	37	Female	Student	iOS	7.5	7.4	8	6	1	33	3	2.1
+U909	54	Female	Professional	Android	4.6	6.3	5	8.9	10	47	6	6.6
+U910	57	Female	Business Owner	Android	4.1	6.4	2	6.1	7	55	5	9.6
+U911	21	Male	Student	iOS	3.7	7.6	1	8.3	1	43	2	11.2
+U912	57	Male	Professional	Android	9.5	1.5	9	6.3	5	47	3	5.7
+U913	24	Male	Professional	iOS	5.4	4.3	4	6.2	1	15	2	3.7
+U914	31	Female	Professional	iOS	11.2	3.4	10	7.3	2	34	3	2.3
+U915	58	Female	Professional	Android	1.5	6.8	8	5.5	6	28	1	12.4
+U916	31	Other	Professional	iOS	8	1.2	1	6.2	10	44	6	3.3
+U917	34	Female	Business Owner	Android	10.1	4.7	7	5.5	7	11	0	11
+U918	60	Male	Freelancer	Android	8.4	6.7	7	5.9	7	38	5	13.2
+U919	23	Female	Freelancer	iOS	11.6	7.9	9	5.3	9	31	3	13.1
+U920	28	Male	Freelancer	Android	10	7.8	7	8	1	57	2	8.1
+U921	33	Female	Student	Android	7.3	5.6	7	6.8	10	30	4	12.7
+U922	29	Other	Professional	Android	9.4	5.9	6	6.1	10	42	3	4.8
+U923	53	Female	Professional	iOS	11.3	2.7	9	7.4	7	11	6	5.8
+U924	22	Male	Business Owner	iOS	3.4	5	10	8	9	41	6	6.3
+U925	28	Male	Business Owner	iOS	7.8	4.3	10	4.5	7	47	3	2.6
+U926	18	Other	Student	Android	1.9	2.6	5	4.8	8	32	6	5.4
+U927	44	Male	Business Owner	iOS	11.8	0.6	5	8.8	1	50	2	12.7
+U928	46	Female	Business Owner	iOS	4.9	5.8	7	7.6	6	40	1	13.8
+U929	56	Other	Business Owner	Android	10.8	3.7	7	7.3	9	41	6	10.8
+U930	48	Male	Student	iOS	8.9	2.2	2	5.6	9	5	2	3
+U931	36	Male	Business Owner	Android	6.7	2.5	4	6.3	1	57	2	3.7
+U932	20	Other	Business Owner	iOS	3.6	6.7	9	5.2	5	53	2	8.6
+U933	32	Other	Freelancer	iOS	1.6	1.7	1	4.9	7	8	3	9.1
+U934	36	Female	Freelancer	Android	9	7.5	2	8.3	9	41	4	13.9
+U935	36	Other	Professional	Android	11.7	3.7	6	4.8	8	32	1	12.3
+U936	47	Female	Student	iOS	2.4	7.2	5	4.5	7	53	2	12.5
+U937	22	Other	Business Owner	Android	6.7	5.2	9	8.2	6	37	5	6.2
+U938	32	Male	Student	iOS	10.4	7.8	9	5	7	37	2	6.1
+U939	34	Other	Business Owner	iOS	6.5	2.2	2	5.8	6	23	3	13.4
+U940	58	Male	Business Owner	Android	7.5	5.1	5	5.6	7	41	3	12.1
+U941	55	Other	Student	Android	9.3	1.7	1	7	8	40	4	3.1
+U942	60	Male	Professional	Android	5.3	0.7	2	7.2	5	27	1	3.1
+U943	30	Female	Freelancer	Android	2.4	7.1	10	6.9	1	28	0	12.4
+U944	45	Other	Professional	iOS	3.5	5.6	2	7.6	3	22	0	10
+U945	25	Other	Professional	Android	2.1	4.3	9	7.9	1	43	3	7.4
+U946	52	Other	Professional	Android	10.1	2.3	5	7.6	7	48	3	11.8
+U947	32	Male	Student	Android	7.8	5.9	7	8	9	21	3	4.3
+U948	59	Other	Professional	Android	6.4	4.3	5	5	6	22	1	2.2
+U949	27	Female	Freelancer	Android	10	5.3	10	5.1	5	49	2	2.9
+U950	35	Other	Student	iOS	2.3	4.4	5	4.1	2	29	0	11.5
+U951	27	Female	Student	iOS	10.7	5.7	9	4.3	10	43	3	3.5
+U952	22	Other	Business Owner	Android	7.9	4.6	10	8.5	8	47	5	3.1
+U953	21	Other	Student	Android	8.2	5	5	5.5	1	49	6	7.3
+U954	28	Other	Freelancer	iOS	7	4.3	7	8	4	15	2	13.4
+U955	37	Female	Freelancer	iOS	11.1	3.9	7	8.4	9	30	4	8
+U956	56	Female	Professional	Android	10.6	3.6	6	7.8	9	16	2	4.5
+U957	54	Other	Professional	iOS	2.9	1.6	4	4.8	2	6	5	7.6
+U958	36	Female	Student	Android	3.3	5.3	4	7.5	6	22	0	11.1
+U959	46	Male	Student	iOS	1.5	2.9	7	6.1	4	18	5	6
+U960	25	Male	Professional	iOS	3.9	7.6	10	4.9	9	6	2	11.1
+U961	47	Other	Business Owner	iOS	10.3	6.3	4	4.6	8	52	3	7.5
+U962	37	Other	Professional	iOS	5.1	5.1	1	5.1	4	13	6	10.6
+U963	43	Male	Freelancer	Android	7.1	0.5	4	5.6	5	5	3	7.9
+U964	35	Male	Business Owner	Android	4.2	3.1	3	4.7	4	44	4	13.8
+U965	50	Female	Freelancer	Android	6.8	5.9	8	8.6	4	15	6	10.1
+U966	52	Male	Freelancer	iOS	8.9	0.5	2	5.3	6	26	1	11.8
+U967	49	Other	Business Owner	Android	10.4	3.2	9	5.8	7	28	1	3.1
+U968	46	Other	Business Owner	iOS	8.2	3.5	2	5.2	8	28	6	5.4
+U969	23	Female	Business Owner	iOS	9.4	3.9	8	6.4	8	24	2	7.3
+U970	56	Other	Freelancer	Android	7.3	6.1	5	5.2	4	27	5	3.9
+U971	20	Female	Business Owner	iOS	11.2	1.4	1	8.9	6	16	2	12.6
+U972	45	Other	Freelancer	iOS	8.3	5.3	7	7.5	7	48	3	11.1
+U973	38	Female	Freelancer	Android	3.3	1.5	7	5.6	2	27	6	10.6
+U974	56	Female	Student	Android	2.5	6.2	3	6.4	7	37	0	12.7
+U975	34	Female	Freelancer	Android	2.4	7.7	10	5.8	2	60	2	8.5
+U976	19	Female	Business Owner	iOS	10	5.6	3	6.3	4	10	6	2.3
+U977	23	Male	Freelancer	iOS	4.9	5.6	6	9	1	10	0	10.1
+U978	32	Male	Student	iOS	10.7	1	5	6.3	4	30	5	9.2
+U979	54	Female	Freelancer	iOS	5.7	5.8	8	6.6	4	55	5	6.7
+U980	55	Other	Professional	iOS	5.9	3.3	4	7.5	8	32	6	10.1
+U981	19	Male	Freelancer	iOS	9.1	6.8	5	8.6	10	52	5	13.1
+U982	35	Female	Professional	iOS	10	5	2	6.9	5	51	3	5.3
+U983	54	Other	Freelancer	Android	10.2	1.8	9	7.2	5	30	0	10.7
+U984	20	Other	Freelancer	Android	1.8	2.9	3	7.1	7	41	3	6.6
+U985	29	Other	Professional	iOS	1.3	7.5	4	7.4	7	11	1	13.1
+U986	48	Female	Freelancer	iOS	2.7	3.2	10	5.7	3	16	4	8.1
+U987	51	Male	Student	Android	1.8	4.8	3	7.7	9	36	4	3.3
+U988	59	Female	Freelancer	iOS	1.7	7.7	1	8.3	8	9	1	12.2
+U989	46	Other	Student	Android	8.9	7.8	2	8.8	4	39	4	7.7
+U990	35	Female	Student	Android	5.1	4.6	4	5.6	6	21	1	3.2
+U991	29	Male	Freelancer	Android	3.3	7.9	1	5.3	1	27	3	8.3
+U992	55	Male	Freelancer	Android	4.8	6.3	3	7.9	6	52	1	4.8
+U993	45	Other	Freelancer	iOS	10.6	0.9	8	7.7	2	58	6	5.5
+U994	58	Female	Business Owner	Android	10.9	7.6	6	7	4	20	2	3.3
+U995	49	Other	Freelancer	iOS	4.2	1.2	1	5.4	10	53	0	12
+U996	23	Female	Student	Android	9.8	2.2	4	5.8	9	17	5	12.3
+U997	48	Male	Freelancer	iOS	8.9	2.9	4	5.8	2	8	6	11.7
+U998	40	Female	Business Owner	iOS	1.4	3.7	3	4.7	4	24	4	8.1
+U999	44	Male	Freelancer	iOS	6.3	1.7	9	5.9	1	52	6	3.5
+
